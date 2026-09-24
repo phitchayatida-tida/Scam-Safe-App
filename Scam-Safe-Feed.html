@@ -1,0 +1,2116 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Scam Safe</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Scam Safe" data-srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Scam Safe&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 14px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --icon-size: 16px;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --corner-shape: round;
+  --radius: var(--border-radius-lg, 10px);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: var(--visualize-paint-gutter, 0px);
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+.cursor-interaction {
+  cursor: var(--cursor-interaction, pointer);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: var(--cursor-interaction, pointer);
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: var(--corner-shape);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-block: 6px;
+  border: 0;
+  background: var(--border);
+}
+
+.nav {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.progress {
+  display: flex;
+  height: 8px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 8px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar:only-child {
+  border-radius: var(--radius-full);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.nav-link,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn,
+.nav-link {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover,
+.nav-link:not(:disabled):not([aria-disabled=&quot;true&quot;]):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.nav-pills .nav-link {
+  min-width: 0;
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.nav-justified .nav-link {
+  flex: 1 1 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+.btn:disabled,
+.nav-link:disabled,
+.nav-link[aria-disabled=&quot;true&quot;] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: var(--corner-shape);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@media (pointer: coarse) {
+  .btn,
+  .nav-link,
+  .form-control,
+  .form-select {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Keep small-screen WebKit from zooming when a text field receives focus. */
+  .form-control,
+  .form-select {
+    font-size: max(16px, var(--font-size-normal));
+  }
+
+  .form-control[type=&quot;file&quot;]::file-selector-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control-color[type=&quot;color&quot;] {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-control:is(
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;week&quot;]
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    padding-block: 8px;
+  }
+
+  .form-check {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+
+  .form-check-input {
+    position: relative;
+  }
+
+  .form-check-input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    content: &quot;&quot;;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-check-label {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-range {
+    height: 44px;
+    touch-action: pan-y;
+  }
+
+  .form-range::-webkit-slider-runnable-track {
+    height: 44px;
+  }
+
+  .form-range::-moz-range-track {
+    height: 44px;
+  }
+
+  .form-range::-webkit-slider-thumb {
+    margin-top: 12px;
+  }
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;application/json&quot; id=&quot;codex-visualization-widget-state&quot;&gt;__CODEX_VISUALIZATION_WIDGET_STATE__&lt;/script&gt;
+&lt;script&gt;(() =&gt; {
+  const root = document.documentElement;
+  const mediaQuery = globalThis.matchMedia(&quot;(prefers-color-scheme: dark)&quot;);
+  const apply = Reflect.apply;
+  const isArray = Array.isArray;
+  const hasOwn = Object.hasOwn;
+  const parentWindow = globalThis.parent;
+  const stringify = JSON.stringify;
+  const parse = JSON.parse;
+  const encode = TextEncoder.prototype.encode.bind(new TextEncoder());
+  const initialStateElement = document.getElementById(
+    &quot;codex-visualization-widget-state&quot;,
+  );
+  const initialGlobals = parse(initialStateElement?.textContent ?? &quot;{}&quot;);
+  initialStateElement?.remove();
+  /** @type {Record&lt;string, unknown&gt; | null} */
+  let state = initialGlobals.widgetState ?? null;
+  const statePersistence = initialGlobals.statePersistence ?? &quot;none&quot;;
+  let nextStateRequestId = 0;
+  /** @type {Map&lt;number, { resolve: () =&gt; void; reject: (error: Error) =&gt; void; timeout: ReturnType&lt;typeof globalThis.setTimeout&gt;; serializedState: string }&gt;} */
+  const pendingStateWrites = new Map();
+  const persistenceError = () =&gt;
+    Object.assign(
+      new Error(&quot;The host could not persist the widget state update&quot;),
+      {
+        code: -32000,
+        data: { code: &quot;widget_state_persistence_failed&quot;, retryable: false },
+      },
+    );
+  /**
+   * @param {object} prototype
+   * @param {string} property
+   */
+  const getPrototypeGetter = (prototype, property) =&gt; {
+    // oxlint-disable-next-line typescript/unbound-method -- invoked through captured Reflect.apply
+    const getter = Object.getOwnPropertyDescriptor(prototype, property)?.get;
+    if (getter == null) {
+      throw new Error(`Missing ${property} getter`);
+    }
+    return getter;
+  };
+  const getMessageData = getPrototypeGetter(MessageEvent.prototype, &quot;data&quot;);
+  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, &quot;ports&quot;);
+  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, &quot;source&quot;);
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const addHostMessageListener = MessagePort.prototype.addEventListener;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const postHostMessage = MessagePort.prototype.postMessage;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const startHostPort = MessagePort.prototype.start;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const stopMessagePropagation = Event.prototype.stopImmediatePropagation;
+  /** @type {MessagePort | null} */
+  let hostPort = null;
+  const postToHost = (type, payload) =&gt; {
+    if (hostPort != null) {
+      apply(postHostMessage, hostPort, [{ type, ...payload }]);
+    }
+  };
+  const openExternal = ({ href }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;open-external&quot;, { href });
+    }
+  };
+  const sendFollowUpMessage = ({ context, prompt, title }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;follow-up&quot;, { context, prompt, title });
+    }
+    return Promise.resolve();
+  };
+  /**
+   * @param {Record&lt;string, unknown&gt; | ((previous: Record&lt;string, unknown&gt; | null) =&gt; Record&lt;string, unknown&gt;)} next
+   * @returns {Promise&lt;void&gt;}
+   */
+  const setWidgetState = async (next) =&gt; {
+    const nextState = typeof next === &quot;function&quot; ? next(state) : next;
+    if (
+      nextState == null ||
+      typeof nextState !== &quot;object&quot; ||
+      isArray(nextState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const inputState = stringify(
+      nextState,
+      (_key, /** @type {unknown} */ value) =&gt; {
+        if (
+          typeof value === &quot;undefined&quot; ||
+          typeof value === &quot;function&quot; ||
+          typeof value === &quot;symbol&quot; ||
+          (typeof value === &quot;number&quot; &amp;&amp; !Number.isFinite(value))
+        ) {
+          throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+        }
+        return value;
+      },
+    );
+    const parsedState = parse(inputState);
+    if (
+      parsedState == null ||
+      typeof parsedState !== &quot;object&quot; ||
+      isArray(parsedState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const storedState = {
+      modelContent: null,
+      privateContent: null,
+      ...parsedState,
+    };
+    const serializedState = stringify(storedState);
+    if (encode(serializedState).length &gt; 16 * 1024) {
+      throw new TypeError(
+        &quot;Widget state must be a JSON object of at most 16 KiB&quot;,
+      );
+    }
+    if (
+      hasOwn(storedState, &quot;imageIds&quot;) &amp;&amp;
+      (!isArray(storedState.imageIds) ||
+        storedState.imageIds.some(
+          (/** @type {unknown} */ id) =&gt; typeof id !== &quot;string&quot;,
+        ))
+    ) {
+      throw new TypeError(&quot;Widget state imageIds must be an array of strings&quot;);
+    }
+    if (storedState.imageIds?.length &gt; 0) {
+      throw Object.assign(
+        new TypeError(&quot;Visualization state does not support image attachments&quot;),
+        { code: -32602, data: { code: &quot;images_unsupported&quot; } },
+      );
+    }
+    state = storedState;
+    globalThis.openai.widgetState = state;
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: { widgetState: state } },
+      }),
+    );
+    if (statePersistence === &quot;none&quot;) {
+      throw persistenceError();
+    }
+    const id = ++nextStateRequestId;
+    return new Promise((resolve, reject) =&gt; {
+      const timeout = globalThis.setTimeout(() =&gt; {
+        pendingStateWrites.delete(id);
+        reject(persistenceError());
+      }, 30_000);
+      pendingStateWrites.set(id, { resolve, reject, timeout, serializedState });
+      postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+    });
+  };
+  const syncTheme = () =&gt; {
+    const theme = mediaQuery.matches ? &quot;dark&quot; : &quot;light&quot;;
+    root.dataset.theme = theme;
+    globalThis.openai = {
+      ...globalThis.openai,
+      openExternal,
+      sendFollowUpMessage,
+      setWidgetState,
+      theme,
+      visualizationStyleVariables: {},
+      visualizationTheme: theme,
+      widgetState: state,
+      statePersistence,
+      stateModelContext: &quot;none&quot;,
+    };
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: globalThis.openai },
+      }),
+    );
+  };
+  const sendHeight = () =&gt; {
+    postToHost(&quot;height&quot;, {
+      height: Math.ceil(
+        Math.max(
+          document.body.scrollHeight,
+          document.body.getBoundingClientRect().height,
+        ),
+      ),
+    });
+  };
+
+  globalThis.addEventListener(
+    &quot;message&quot;,
+    (event) =&gt; {
+      const data = apply(getMessageData, event, []);
+      const ports = apply(getMessagePorts, event, []);
+      const source = apply(getMessageSource, event, []);
+      if (
+        hostPort != null ||
+        source !== parentWindow ||
+        typeof data !== &quot;object&quot; ||
+        data?.type !== &quot;codex-visualization-initialize&quot; ||
+        !isArray(ports) ||
+        ports.length !== 1
+      ) {
+        return;
+      }
+      apply(stopMessagePropagation, event, []);
+      const nextHostPort = ports[0];
+      try {
+        apply(addHostMessageListener, nextHostPort, [
+          &quot;message&quot;,
+          (event) =&gt; {
+            const data = apply(getMessageData, event, []);
+            if (typeof data === &quot;object&quot; &amp;&amp; data?.type === &quot;measure&quot;) {
+              sendHeight();
+            } else if (
+              typeof data === &quot;object&quot; &amp;&amp;
+              data?.type === &quot;widget-state-result&quot;
+            ) {
+              /** @type {unknown} */
+              const id = data.id;
+              if (typeof id !== &quot;number&quot;) {
+                return;
+              }
+              const pending = pendingStateWrites.get(id);
+              if (pending != null) {
+                pendingStateWrites.delete(id);
+                globalThis.clearTimeout(pending.timeout);
+                if (data.ok === true) {
+                  pending.resolve();
+                } else {
+                  pending.reject(persistenceError());
+                }
+              }
+            }
+          },
+        ]);
+        apply(startHostPort, nextHostPort, []);
+      } catch {
+        return;
+      }
+      hostPort = nextHostPort;
+      for (const [id, { serializedState }] of pendingStateWrites) {
+        postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+      }
+      sendHeight();
+    },
+    { capture: true },
+  );
+  document.currentScript?.remove();
+  mediaQuery.addEventListener(&quot;change&quot;, syncTheme);
+  globalThis.addEventListener(&quot;click&quot;, (event) =&gt; {
+    if (event.defaultPrevented) {
+      return;
+    }
+    let element = null;
+    if (event.target instanceof globalThis.Element) {
+      element = event.target;
+    } else if (event.target instanceof globalThis.Node) {
+      element = event.target.parentElement;
+    }
+    const link = element?.closest(&quot;a[href]&quot;);
+    const href = link?.getAttribute(&quot;href&quot;);
+    if (href == null) {
+      return;
+    }
+    if (href.startsWith(&quot;#&quot;)) {
+      let id;
+      try {
+        id = decodeURIComponent(href.slice(1));
+      } catch {
+        return;
+      }
+      const target = id.length === 0 ? root : document.getElementById(id);
+      if (
+        target == null ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      event.preventDefault();
+      postToHost(&quot;scroll-to&quot;, {
+        top: target.getBoundingClientRect().top + globalThis.scrollY,
+      });
+      return;
+    }
+    event.preventDefault();
+    openExternal({ href });
+  });
+  new ResizeObserver(sendHeight).observe(document.body);
+  syncTheme();
+})();
+&lt;/script&gt;
+&lt;div id=&quot;konoon-mobile&quot; aria-label=&quot;ต้นแบบแอป Scam Safe&quot;&gt;
+  &lt;div class=&quot;preview-bar&quot;&gt;&lt;label for=&quot;ko-screen&quot;&gt;หน้าจอ&lt;/label&gt;&lt;select id=&quot;ko-screen&quot;&gt;&lt;/select&gt;&lt;span class=&quot;demo-label&quot;&gt;ต้นแบบ · ข้อมูลสมมติ&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;ko-phone&quot;&gt;
+    &lt;div class=&quot;ko-status&quot;&gt;&lt;span&gt;9:41&lt;/span&gt;&lt;span&gt;&lt;i data-lucide=&quot;signal&quot;&gt;&lt;/i&gt;&lt;i data-lucide=&quot;wifi&quot;&gt;&lt;/i&gt;&lt;i data-lucide=&quot;battery-full&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;header id=&quot;ko-header&quot;&gt;&lt;/header&gt;&lt;main id=&quot;ko-main&quot; aria-live=&quot;polite&quot;&gt;&lt;/main&gt;&lt;nav id=&quot;ko-nav&quot; aria-label=&quot;เมนูหลัก&quot;&gt;&lt;/nav&gt;&lt;div class=&quot;ko-homebar&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+@import url(&#x27;https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&amp;display=swap&#x27;);
+#konoon-mobile{--ko-brand:#5146dc;--ko-bg:light-dark(#f6f7fb,#151821);--ko-surface:light-dark(#fff,#222633);--ko-text:light-dark(#20253e,#f0f2fa);--ko-muted:light-dark(#626b80,#b1b9cd);--ko-line:light-dark(#e8eaf2,#383e50);--ko-soft:light-dark(#eeedff,#302c51);--ko-amber:light-dark(#8b5105,#ffd18a);--ko-warn:light-dark(#fff3df,#3c3022);--ko-mint:light-dark(#dff8ed,#1d3b35);font-family:&#x27;Noto Sans Thai&#x27;,sans-serif;color:var(--ko-text);font-size:14px;line-height:1.65;padding:10px 0 18px}
+#konoon-mobile *{box-sizing:border-box}#konoon-mobile button,#konoon-mobile input,#konoon-mobile select,#konoon-mobile textarea{font:inherit}#konoon-mobile svg{width:21px;height:21px;vertical-align:middle;flex-shrink:0}#konoon-mobile button:focus-visible{outline:3px solid #9290ff;outline-offset:3px}
+#konoon-mobile .preview-bar{max-width:430px;margin:0 auto 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}#konoon-mobile .preview-bar select{min-height:44px;flex:1;min-width:180px;background:var(--ko-surface);color:var(--ko-text);border:1px solid var(--ko-line);border-radius:12px;padding:8px}#konoon-mobile .demo-label{font-size:12px;color:var(--ko-muted)}
+#konoon-mobile .ko-phone{max-width:402px;margin:auto;background:var(--ko-bg);border:1px solid var(--ko-line);border-radius:34px;overflow:hidden;box-shadow:0 16px 50px #10152a14}#konoon-mobile .ko-status{padding:18px 25px 8px;display:flex;justify-content:space-between;font-weight:600;font-size:12px}#konoon-mobile .ko-status&gt;span:last-child{display:flex;gap:5px}#konoon-mobile .ko-status svg{width:15px;height:15px}#konoon-mobile header{padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:10px}#konoon-mobile .ko-brand{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:700}#konoon-mobile .brand-mark{display:grid;place-items:center;background:var(--ko-brand);color:white;width:38px;height:38px;border-radius:13px}#konoon-mobile h1{font-size:27px;line-height:1.4;letter-spacing:-.7px;margin:8px 0 12px;font-weight:700}#konoon-mobile h2{font-size:19px;line-height:1.5;margin:0 0 8px;font-weight:700}#konoon-mobile h3{font-size:15px;margin:0 0 7px;font-weight:600}#konoon-mobile p{margin:6px 0 14px}#konoon-mobile main{padding:6px 22px 24px;min-height:555px}#konoon-mobile .muted{color:var(--ko-muted)}#konoon-mobile .small{font-size:12px}#konoon-mobile .row{display:flex;align-items:center;gap:10px}#konoon-mobile .between{justify-content:space-between}#konoon-mobile .stack{display:grid;gap:12px}#konoon-mobile .surface{background:var(--ko-surface);border:1px solid var(--ko-line);padding:17px;border-radius:20px;margin-bottom:13px}#konoon-mobile .hero{background:var(--ko-brand);color:white;border-radius:24px;padding:22px;margin-bottom:20px;position:relative}#konoon-mobile .hero p{color:#e7e5ff}#konoon-mobile .hero .eyebrow{font-size:12px;letter-spacing:1.5px;color:#dbd8ff}#konoon-mobile .hero button{background:white;color:#332c9c}#konoon-mobile .pill{display:inline-flex;gap:5px;align-items:center;border-radius:9px;padding:4px 9px;background:var(--ko-soft);color:var(--ko-text);font-size:12px}#konoon-mobile .pill svg{width:14px;height:14px}#konoon-mobile .warn{background:var(--ko-warn);color:var(--ko-amber)}#konoon-mobile .mint{background:var(--ko-mint)}#konoon-mobile .neutral{background:var(--ko-line)}#konoon-mobile .button{border:0;background:var(--ko-brand);color:white;padding:13px 17px;border-radius:14px;min-height:48px;width:100%;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:10px}#konoon-mobile .secondary{background:var(--ko-soft);color:var(--ko-text)}#konoon-mobile .ghost{border:0;background:transparent;color:var(--ko-text);padding:11px;min-height:44px;border-radius:12px}#konoon-mobile .textlink{border:0;background:transparent;color:light-dark(#5146dc,#b7b0ff);padding:10px 0;font-size:13px;text-align:left}#konoon-mobile .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}#konoon-mobile .shortcut{border:1px solid var(--ko-line);background:var(--ko-surface);padding:17px 12px;text-align:left;border-radius:18px;color:var(--ko-text)}#konoon-mobile .shortcut svg{display:block;color:light-dark(#5146dc,#b7b0ff);margin-bottom:9px}#konoon-mobile .shortcut span{display:block;font-size:12px;color:var(--ko-muted);margin-top:4px}#konoon-mobile .section{margin:22px 0 12px}#konoon-mobile label.field{display:grid;gap:7px;margin:14px 0;font-weight:500}#konoon-mobile input:not([type=checkbox]),#konoon-mobile textarea,#konoon-mobile main select{width:100%;border:1px solid var(--ko-line);border-radius:13px;padding:13px;background:var(--ko-surface);color:var(--ko-text);font-size:16px;min-width:0}#konoon-mobile textarea{min-height:125px;resize:vertical}#konoon-mobile .check{display:flex;align-items:flex-start;gap:9px;font-size:13px;margin:14px 0}#konoon-mobile input[type=checkbox]{accent-color:var(--ko-brand);margin-top:5px}#konoon-mobile .tabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 18px}#konoon-mobile .chip{background:var(--ko-surface);border:1px solid var(--ko-line);color:var(--ko-muted);border-radius:12px;padding:10px 12px;min-height:44px;font-size:13px}#konoon-mobile .chip.active{background:var(--ko-brand);color:white;border-color:transparent}#konoon-mobile .avatar{display:grid;place-items:center;width:35px;height:35px;border-radius:50%;background:var(--ko-soft);font-weight:600;font-size:12px}#konoon-mobile .feed{text-align:left;width:100%;color:var(--ko-text)}#konoon-mobile .feed h3{margin-top:14px;font-size:17px}#konoon-mobile .feed p{font-size:13px;color:var(--ko-muted)}#konoon-mobile .meta{display:flex;gap:15px;color:var(--ko-muted);font-size:12px;padding-top:8px}#konoon-mobile .meta svg{width:16px;height:16px}#konoon-mobile .listrow{display:flex;width:100%;align-items:center;gap:12px;padding:16px 0;border:0;border-bottom:1px solid var(--ko-line);background:transparent;color:var(--ko-text);text-align:left}#konoon-mobile .listrow&gt;div{flex:1}#konoon-mobile .listrow p{margin:2px 0;font-size:12px;color:var(--ko-muted)}#konoon-mobile .big-icon{width:64px;height:64px;border-radius:22px;display:grid;place-items:center;background:var(--ko-soft);margin:25px 0 20px}#konoon-mobile .big-icon svg{width:30px;height:30px}#konoon-mobile .result-number{font-size:42px;font-weight:700;line-height:1.3}#konoon-mobile .result-number span{font-size:16px;font-weight:400}#konoon-mobile .note{font-size:12px;color:var(--ko-muted);display:flex;gap:8px;margin:13px 0}#konoon-mobile .note svg{width:17px;height:17px;margin-top:2px}#konoon-mobile .steps{display:flex;gap:6px;margin:8px 0 18px}#konoon-mobile .steps span{height:4px;background:var(--ko-line);flex:1;border-radius:4px}#konoon-mobile .steps .done{background:var(--ko-brand)}#konoon-mobile .upload{border:1px dashed var(--ko-brand);padding:27px 15px;text-align:center;border-radius:18px;background:var(--ko-soft);width:100%;color:var(--ko-text)}#konoon-mobile .timeline{border-left:2px solid var(--ko-line);margin:20px 0 20px 9px;padding-left:23px}#konoon-mobile .event{position:relative;margin:0 0 24px}#konoon-mobile .event:before{content:&#x27;&#x27;;position:absolute;left:-30px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--ko-brand);outline:4px solid var(--ko-bg)}#konoon-mobile .event p{font-size:12px;color:var(--ko-muted);margin:4px 0}#konoon-mobile nav{display:grid;grid-template-columns:repeat(4,1fr);background:var(--ko-surface);border-top:1px solid var(--ko-line);padding:10px 8px 4px}#konoon-mobile nav button{border:0;background:transparent;color:var(--ko-muted);display:grid;justify-items:center;gap:4px;font-size:11px;min-height:50px;padding:4px}#konoon-mobile nav button.active{color:light-dark(#5146dc,#b7b0ff);font-weight:600}#konoon-mobile .ko-homebar{height:22px;background:var(--ko-surface);display:grid;place-items:center}#konoon-mobile .ko-homebar:after{content:&#x27;&#x27;;width:95px;height:4px;background:var(--ko-text);border-radius:4px}#konoon-mobile .empty{text-align:center;padding:15px 0}#konoon-mobile .empty .big-icon{margin:30px auto 20px}#konoon-mobile .inline-alert{padding:12px;border-radius:12px;background:var(--ko-warn);color:var(--ko-amber);font-size:13px;margin-top:12px}#konoon-mobile .color-dots{display:flex;gap:10px;margin-top:12px}#konoon-mobile .color-dots span{width:26px;height:26px;border-radius:50%}@media(max-width:360px){#konoon-mobile main{padding-left:16px;padding-right:16px}#konoon-mobile header{padding-left:16px;padding-right:16px}#konoon-mobile h1{font-size:25px}}
+#konoon-mobile{--ko-peach:light-dark(#fff0e6,#412d29);--ko-teal:light-dark(#116b60,#9aebd6);--ko-lilac:light-dark(#eee8ff,#332a50);--ko-bg:light-dark(#f8f8ff,#171823)}
+#konoon-mobile .ko-phone{background:radial-gradient(ellipse at 100% 0%,light-dark(#e8e4ff,#302647) 0,transparent 40%),var(--ko-bg)}
+#konoon-mobile .brand-mark{background:linear-gradient(135deg,var(--ko-brand),#8970ee);box-shadow:0 5px 12px #5146dc24;transform:rotate(-5deg)}
+#konoon-mobile .hero{background:linear-gradient(125deg,#373197 0%,var(--ko-brand) 52%,#7863d4 100%);overflow:hidden;box-shadow:0 12px 26px #5146dc25}
+#konoon-mobile .hero:before{content:&#x27;&#x27;;position:absolute;width:170px;height:170px;right:-85px;top:-95px;border:28px solid #c9bfff25;border-radius:50%;pointer-events:none}
+#konoon-mobile .hero&gt;*{position:relative;z-index:1}
+#konoon-mobile .hero .hero-symbols{display:flex;gap:8px;margin:14px 0 5px}
+#konoon-mobile .hero-symbols span{display:grid;place-items:center;width:39px;height:39px;border-radius:13px;background:#d7fff0;color:#176c59;transform:rotate(-7deg)}
+#konoon-mobile .hero-symbols span:nth-child(2){background:#ffe6ce;color:#934a28;transform:rotate(5deg)}
+#konoon-mobile .hero-symbols span:nth-child(3){background:#e8ddff;color:#5942a0;transform:rotate(-3deg)}
+#konoon-mobile .shortcut{border:0;font-weight:600;padding:18px 14px;background:var(--ko-peach)}
+#konoon-mobile .shortcut:nth-child(2){background:var(--ko-mint)}
+#konoon-mobile .shortcut&gt;svg{width:43px;height:43px;padding:10px;box-sizing:border-box;border-radius:14px;background:light-dark(#ffd8bb,#6a4232);color:light-dark(#934c26,#ffd3af)}
+#konoon-mobile .shortcut:nth-child(2)&gt;svg{background:light-dark(#bdebdc,#29584c);color:var(--ko-teal)}
+#konoon-mobile .shortcut span{font-weight:400}
+#konoon-mobile .button:not(.secondary){background:linear-gradient(110deg,var(--ko-brand),#7060d9);box-shadow:0 5px 12px #5146dc1c}
+#konoon-mobile .hero .button{background:#fff;color:#39308e;box-shadow:none}
+#konoon-mobile .avatar{background:var(--ko-lilac);color:light-dark(#6348a1,#d5c4fa)}
+#konoon-mobile .big-icon{background:var(--ko-lilac);color:light-dark(#6049ad,#cfbcff);box-shadow:6px 6px 0 light-dark(#e3dcfa,#39314e);transform:rotate(-5deg)}
+#konoon-mobile .big-icon.mint{background:var(--ko-mint);color:var(--ko-teal);box-shadow:6px 6px 0 light-dark(#c9ebdf,#2b5147)}
+#konoon-mobile .feed{overflow:hidden;box-shadow:0 5px 15px #28234806}
+#konoon-mobile .category-art{display:flex;align-items:center;justify-content:space-between;background:var(--ko-peach);color:light-dark(#98552b,#ffd7b6);margin:-17px -17px 16px;padding:15px 18px;font-size:12px;letter-spacing:.8px;font-weight:600}
+#konoon-mobile .category-art svg{width:32px;height:32px;stroke-width:1.6}
+#konoon-mobile .category-art.shopping{background:var(--ko-lilac);color:light-dark(#624695,#d9c5ff)}
+#konoon-mobile .section-symbol{display:inline-grid;place-items:center;width:38px;height:38px;margin:8px 0 4px;border-radius:13px;background:var(--ko-lilac);color:light-dark(#624695,#d9c5ff)}
+#konoon-mobile[data-screen=&quot;community&quot;] .section-symbol,#konoon-mobile[data-screen=&quot;compose&quot;] .section-symbol{background:var(--ko-mint);color:var(--ko-teal)}
+#konoon-mobile[data-screen=&quot;report&quot;] .section-symbol,#konoon-mobile[data-screen=&quot;evidence&quot;] .section-symbol,#konoon-mobile[data-screen=&quot;review&quot;] .section-symbol{background:var(--ko-peach);color:light-dark(#955028,#ffd4b7)}
+#konoon-mobile .warn{background:var(--ko-warn);color:var(--ko-amber)}
+#konoon-mobile nav button{border-radius:15px}
+#konoon-mobile nav button.active{background:var(--ko-soft)}
+#konoon-mobile .chip.active{box-shadow:0 4px 10px #5146dc18}
+#konoon-mobile .note{padding:12px;border-radius:13px;background:var(--ko-soft)}
+#konoon-mobile[data-screen=&quot;community&quot;] h1{color:var(--ko-teal)}
+#konoon-mobile[data-screen=&quot;found&quot;] h1{color:var(--ko-amber)}
+#konoon-mobile .pill{font-weight:500;flex-wrap:wrap}
+#konoon-mobile .pill[data-tone=&quot;hotel&quot;],#konoon-mobile .chip[data-tone=&quot;hotel&quot;]{background:light-dark(#ffeadb,#492f23);color:light-dark(#914416,#ffd0aa)}
+#konoon-mobile .pill[data-tone=&quot;shopping&quot;],#konoon-mobile .chip[data-tone=&quot;shopping&quot;]{background:light-dark(#ede5ff,#36274d);color:light-dark(#69429d,#dec5ff)}
+#konoon-mobile .pill[data-tone=&quot;processing&quot;]{background:light-dark(#dfedff,#233b59);color:light-dark(#23568e,#add4ff)}
+#konoon-mobile .pill[data-tone=&quot;private&quot;]{background:light-dark(#dff5ef,#1f4037);color:light-dark(#246a58,#a4e5cf)}
+#konoon-mobile .chip.active[data-tone]{box-shadow:inset 0 0 0 2px currentColor}
+#konoon-mobile .brand-mark{transform:none}
+#konoon-mobile .app-emblem{position:relative;display:grid;place-items:center;background:linear-gradient(145deg,#4435b8,#7362e9);color:#dbfff1;border:1px solid #c9c2ff42;box-shadow:0 15px 28px #3c29952b;width:118px;height:118px;border-radius:30px;margin:0 auto}
+#konoon-mobile .app-emblem&gt;svg{width:72px;height:72px;stroke-width:1.7}
+#konoon-mobile .app-emblem .lens{position:absolute;right:17px;bottom:17px;display:grid;place-items:center;width:36px;height:36px;background:#d9fff0;color:#353088;border-radius:12px;box-shadow:0 0 0 4px #6957db}
+#konoon-mobile .app-emblem .lens svg{width:23px;height:23px}
+#konoon-mobile .app-emblem.compact{width:64px;height:64px;border-radius:17px;box-shadow:0 7px 13px #29237c33}
+#konoon-mobile .app-emblem.compact&gt;svg{width:40px;height:40px}
+#konoon-mobile .app-emblem.compact .lens{right:8px;bottom:8px;width:21px;height:21px;border-radius:7px;box-shadow:0 0 0 2px #6957db}
+#konoon-mobile .app-emblem.compact .lens svg{width:15px;height:15px}
+#konoon-mobile .icon-showcase{text-align:center;padding:28px 0 15px}
+#konoon-mobile .icon-showcase h1{font-size:33px;line-height:1.05;letter-spacing:-1px;margin-top:21px}
+#konoon-mobile .icon-showcase h1 span{display:block;color:light-dark(#6652c5,#b7aaff)}
+#konoon-mobile .launcher{background:linear-gradient(140deg,#d5cdfa,#c5eade);padding:24px 12px;border-radius:25px;margin:18px 0;color:#292846}
+#konoon-mobile .launcher-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 8px}
+#konoon-mobile .launcher-app{border:0;background:none;color:inherit;display:grid;justify-items:center;gap:8px;font-size:11px;padding:0;min-height:88px}
+#konoon-mobile .launcher-neutral{display:grid;place-items:center;width:64px;height:64px;background:#f6f8fddd;border-radius:17px;color:#717589}
+#konoon-mobile .launcher-neutral svg{width:27px;height:27px}
+#konoon-mobile[data-screen=&quot;appicon&quot;] nav,#konoon-mobile[data-screen=&quot;splash&quot;] nav{display:none}
+#konoon-mobile .splash{min-height:510px;display:flex;flex-direction:column;justify-content:center;text-align:center}
+#konoon-mobile .splash h1{font-size:40px;line-height:1.12;letter-spacing:-1.5px;margin:25px 0 12px}
+#konoon-mobile .splash .button{margin-top:45px}
+#konoon-mobile[data-screen=&quot;detail&quot;] .event:nth-child(1):before{background:#318675}
+#konoon-mobile[data-screen=&quot;detail&quot;] .event:nth-child(2):before{background:#4684d6}
+#konoon-mobile[data-screen=&quot;detail&quot;] .event:nth-child(3):before{background:var(--ko-muted)}
+#konoon-mobile .category-caption{margin:8px 0 14px}
+#konoon-mobile:not([data-screen=&quot;home&quot;]) #ko-header &gt; strong{font-size:24px}
+#konoon-mobile[data-screen=&quot;appicon&quot;] .app-emblem&gt;[data-lucide=&quot;shield&quot;],
+#konoon-mobile[data-screen=&quot;appicon&quot;] .app-emblem&gt;.lucide-shield,
+#konoon-mobile[data-screen=&quot;appicon&quot;] .app-emblem&gt;[data-lucide=&quot;shield&quot;] svg{width:94px!important;height:94px!important;max-width:none!important;max-height:none!important;display:block}
+#konoon-mobile[data-screen=&quot;appicon&quot;] .app-emblem.compact&gt;[data-lucide=&quot;shield&quot;],
+#konoon-mobile[data-screen=&quot;appicon&quot;] .app-emblem.compact&gt;.lucide-shield,
+#konoon-mobile[data-screen=&quot;appicon&quot;] .app-emblem.compact&gt;[data-lucide=&quot;shield&quot;] svg{width:52px!important;height:52px!important}
+#konoon-mobile[data-screen=&quot;community&quot;] #ko-main{height:620px;min-height:0;overflow-y:auto;overscroll-behavior-y:contain;padding:0;scrollbar-width:thin}
+#konoon-mobile .social-top{padding:16px 20px 0;background:var(--ko-surface)}
+#konoon-mobile .social-top h1{font-size:23px;margin:0}
+#konoon-mobile .social-compose{display:flex;align-items:center;gap:10px;width:100%;border:0;border-top:1px solid var(--ko-line);background:var(--ko-surface);padding:16px 20px;color:var(--ko-muted);text-align:left}
+#konoon-mobile .social-post{background:var(--ko-surface);padding:18px 20px;border-top:6px solid var(--ko-bg)}
+#konoon-mobile .social-author{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+#konoon-mobile .social-author&gt;div{flex:1}
+#konoon-mobile .social-author .avatar{width:39px;height:39px;flex-shrink:0}
+#konoon-mobile .social-post h3{font-size:16px;margin:13px 0 7px}
+#konoon-mobile .social-post p{font-size:14px;line-height:1.8;margin-bottom:10px}
+#konoon-mobile .social-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;border-top:1px solid var(--ko-line);margin-top:12px;padding-top:6px}
+#konoon-mobile .social-actions button{border:0;background:transparent;color:var(--ko-muted);padding:10px 2px;min-height:44px;font-size:11px;display:flex;gap:5px;align-items:center;justify-content:center;border-radius:10px}
+#konoon-mobile .social-actions button[aria-pressed=&quot;true&quot;]{color:light-dark(#6650b7,#cbb8ff);background:var(--ko-soft)}
+#konoon-mobile .social-actions svg{width:17px;height:17px}
+#konoon-mobile .social-comments{background:var(--ko-bg);padding:12px;border-radius:14px;margin-top:10px}
+#konoon-mobile .social-comments[hidden]{display:none}
+#konoon-mobile .social-comments p{font-size:12px}
+#konoon-mobile .social-comments input{font-size:14px}
+#konoon-mobile .social-end{text-align:center;color:var(--ko-muted);font-size:12px;padding:23px}
+&lt;/style&gt;
+&lt;script&gt;
+(()=&gt;{
+const root=document.getElementById(&#x27;konoon-mobile&#x27;),main=root.querySelector(&#x27;#ko-main&#x27;),head=root.querySelector(&#x27;#ko-header&#x27;),nav=root.querySelector(&#x27;#ko-nav&#x27;),picker=root.querySelector(&#x27;#ko-screen&#x27;);
+const screens=[[&#x27;appicon&#x27;,&#x27;00 · ไอคอนแอป Scam Safe&#x27;],[&#x27;splash&#x27;,&#x27;00 · หน้าเปิดแอป&#x27;],[&#x27;home&#x27;,&#x27;01 · หน้าแรก&#x27;],[&#x27;search&#x27;,&#x27;02 · ค้นหาข้อมูล&#x27;],[&#x27;found&#x27;,&#x27;03 · ผลค้นหา: พบรายงาน&#x27;],[&#x27;none&#x27;,&#x27;04 · ผลค้นหา: ไม่พบรายงาน&#x27;],[&#x27;error&#x27;,&#x27;05 · ผลค้นหา: ระบบขัดข้อง&#x27;],[&#x27;related&#x27;,&#x27;06 · ข้อมูลที่เชื่อมโยง&#x27;],[&#x27;login&#x27;,&#x27;07 · เข้าสู่ระบบ&#x27;],[&#x27;otp&#x27;,&#x27;08 · ยืนยันเบอร์โทร&#x27;],[&#x27;report&#x27;,&#x27;09 · แจ้งเหตุ: รายละเอียด&#x27;],[&#x27;evidence&#x27;,&#x27;10 · แจ้งเหตุ: หลักฐาน&#x27;],[&#x27;review&#x27;,&#x27;11 · ตรวจสอบก่อนส่ง&#x27;],[&#x27;sent&#x27;,&#x27;12 · ส่งรายงานสำเร็จ&#x27;],[&#x27;community&#x27;,&#x27;13 · พื้นที่แชร์ประสบการณ์&#x27;],[&#x27;story&#x27;,&#x27;14 · อ่านเรื่องและความคิดเห็น&#x27;],[&#x27;compose&#x27;,&#x27;15 · เขียนประสบการณ์&#x27;],[&#x27;tracking&#x27;,&#x27;16 · เรื่องของฉัน&#x27;],[&#x27;detail&#x27;,&#x27;17 · ติดตามสถานะ&#x27;],[&#x27;notifications&#x27;,&#x27;18 · การแจ้งเตือน&#x27;],[&#x27;profile&#x27;,&#x27;19 · บัญชีและความเป็นส่วนตัว&#x27;],[&#x27;dispute&#x27;,&#x27;20 · ขอแก้ไขข้อมูล&#x27;]];
+let page=&#x27;home&#x27;,filter=&#x27;ทั้งหมด&#x27;,searchType=&#x27;เบอร์โทร&#x27;,verified=false,uploaded=false;
+const draft={};
+const icon=n=&gt;`&lt;i data-lucide=&quot;${n}&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;`;
+const btn=(text,to,secondary=false)=&gt;`&lt;button class=&quot;button ${secondary?&#x27;secondary&#x27;:&#x27;&#x27;}&quot; data-go=&quot;${to}&quot;&gt;${text}${icon(&#x27;arrow-right&#x27;)}&lt;/button&gt;`;
+const note=t=&gt;`&lt;div class=&quot;note&quot;&gt;${icon(&#x27;lock-keyhole&#x27;)}&lt;span&gt;${t}&lt;/span&gt;&lt;/div&gt;`;
+const field=(label,id,placeholder,type=&#x27;text&#x27;)=&gt;`&lt;label class=&quot;field&quot;&gt;${label}&lt;input id=&quot;${id}&quot; type=&quot;${type}&quot; placeholder=&quot;${placeholder}&quot; value=&quot;${draft[id]||&#x27;&#x27;}&quot;&gt;&lt;/label&gt;`;
+const steps=n=&gt;`&lt;div class=&quot;row between small muted&quot;&gt;&lt;span&gt;แจ้งเหตุพร้อมหลักฐาน&lt;/span&gt;&lt;span&gt;${n} / 3&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;steps&quot;&gt;${[1,2,3].map(i=&gt;`&lt;span class=&quot;${i&lt;=n?&#x27;done&#x27;:&#x27;&#x27;}&quot;&gt;&lt;/span&gt;`).join(&#x27;&#x27;)}&lt;/div&gt;`;
+const story=(title,tag,body)=&gt;`&lt;button class=&quot;surface feed&quot; data-go=&quot;story&quot;&gt;&lt;div class=&quot;row between&quot;&gt;&lt;div class=&quot;row&quot;&gt;&lt;span class=&quot;avatar&quot;&gt;ม.&lt;/span&gt;&lt;span class=&quot;small&quot;&gt;มะลิ · 2 ชม.&lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;pill&quot;&gt;${tag}&lt;/span&gt;&lt;/div&gt;&lt;h3&gt;${title}&lt;/h3&gt;&lt;p&gt;${body}&lt;/p&gt;&lt;div class=&quot;meta&quot;&gt;&lt;span&gt;${icon(&#x27;message-circle&#x27;)} 8 ความคิดเห็น&lt;/span&gt;&lt;span&gt;${icon(&#x27;bookmark&#x27;)} บันทึกเรื่อง&lt;/span&gt;&lt;/div&gt;&lt;/button&gt;`;
+const emblem=(small=false)=&gt;`&lt;span class=&quot;app-emblem ${small?&#x27;compact&#x27;:&#x27;&#x27;}&quot; aria-hidden=&quot;true&quot;&gt;${icon(&#x27;shield&#x27;)}&lt;span class=&quot;lens&quot;&gt;${icon(&#x27;search&#x27;)}&lt;/span&gt;&lt;/span&gt;`;
+const socialPosts=[
+{name:&#x27;มะลิ&#x27;,initial:&#x27;ม.&#x27;,time:&#x27;2 ชม.&#x27;,tag:&#x27;จองที่พัก&#x27;,title:&#x27;จองห้องพักผ่านเพจ ต้องเช็กตรงไหนบ้าง?&#x27;,body:&#x27;เราเห็นภาพรีวิวเยอะมาก เลยตัดสินใจจ่ายมัดจำ แต่หลังจากนั้นติดต่อไม่ได้ อยากแชร์ให้ลองโทรตรวจสอบกับที่พักผ่านช่องทางที่ค้นหาเองอีกครั้งก่อนโอนค่ะ&#x27;,likes:24},
+{name:&#x27;ต้นกล้า&#x27;,initial:&#x27;ต.&#x27;,time:&#x27;3 ชม.&#x27;,tag:&#x27;ซื้อขายออนไลน์&#x27;,title:&#x27;ร้านเร่งให้โอนใน 5 นาที เราเลยหยุดเช็กก่อน&#x27;,body:&#x27;ส่วนลดมีเวลาจำกัด จนเกือบลืมตรวจช่องทางติดต่อร้าน สุดท้ายขอเวลาตรวจข้อมูลก่อน อยากบอกว่าไม่ต้องรีบเพราะกลัวพลาดโปรนะครับ&#x27;,likes:18},
+{name:&#x27;วันใหม่&#x27;,initial:&#x27;ว.&#x27;,time:&#x27;4 ชม.&#x27;,tag:&#x27;จองที่พัก&#x27;,title:&#x27;รูปสวยอย่างเดียวอาจยังไม่พอ&#x27;,body:&#x27;ก่อนจองครั้งนี้เราเช็กที่อยู่และโทรถามที่พักเอง ได้รู้ว่าราคาที่เห็นไม่ตรงกับที่พัก เลยกลับมาตรวจรายละเอียดใหม่ทั้งหมดค่ะ&#x27;,likes:31},
+{name:&#x27;เพื่อนร่วมทาง&#x27;,initial:&#x27;พ.&#x27;,time:&#x27;5 ชม.&#x27;,tag:&#x27;ซื้อขายออนไลน์&#x27;,title:&#x27;เก็บแชตและสลิปไว้ ช่วยเรียงเรื่องได้เยอะ&#x27;,body:&#x27;ตอนเกิดเรื่องเราค่อนข้างตกใจ พอรวบรวมเวลา แชต และสลิปไว้ด้วยกัน ก็อธิบายเหตุการณ์ได้ง่ายขึ้น หลักฐานเราเก็บในรายงานส่วนตัว ไม่ลงในโพสต์ค่ะ&#x27;,likes:42},
+{name:&#x27;ใบชา&#x27;,initial:&#x27;บ.&#x27;,time:&#x27;6 ชม.&#x27;,tag:&#x27;ซื้อขายออนไลน์&#x27;,title:&#x27;มีใครเคยเจอลิงก์ให้จ่ายเพิ่มหลังสั่งของไหม?&#x27;,body:&#x27;มีข้อความบอกว่าต้องจ่ายค่าส่งเพิ่ม เราเลยเปิดดูคำสั่งซื้อจากแอปที่สั่งโดยตรงก่อน ใครมีวิธีตรวจสอบเพิ่มเติม มาแชร์กันได้นะคะ&#x27;,likes:12}
+];
+const socialLiked=new Set(),socialSaved=new Set();
+const socialPost=(p,i)=&gt;`&lt;article class=&quot;social-post&quot; data-post=&quot;${i}&quot;&gt;&lt;div class=&quot;social-author&quot;&gt;&lt;span class=&quot;avatar&quot;&gt;${p.initial}&lt;/span&gt;&lt;div&gt;&lt;strong&gt;${p.name}&lt;/strong&gt;&lt;div class=&quot;small muted&quot;&gt;นามแฝง · ${p.time}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span class=&quot;pill&quot;&gt;${p.tag}&lt;/span&gt;&lt;h3&gt;${p.title}&lt;/h3&gt;&lt;p&gt;${p.body}&lt;/p&gt;&lt;span class=&quot;small muted&quot; data-likes&gt;${p.likes+(socialLiked.has(i)?1:0)} คนถูกใจ&lt;/span&gt;&lt;div class=&quot;social-actions&quot;&gt;&lt;button data-action=&quot;social-like&quot; aria-pressed=&quot;${socialLiked.has(i)}&quot;&gt;${icon(&#x27;heart&#x27;)}ถูกใจ&lt;/button&gt;&lt;button data-action=&quot;social-comment&quot; aria-expanded=&quot;false&quot;&gt;${icon(&#x27;message-circle&#x27;)}ความคิดเห็น&lt;/button&gt;&lt;button data-action=&quot;social-save&quot; aria-pressed=&quot;${socialSaved.has(i)}&quot;&gt;${icon(&#x27;bookmark&#x27;)}${socialSaved.has(i)?&#x27;บันทึกแล้ว&#x27;:&#x27;บันทึก&#x27;}&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;social-comments&quot; hidden&gt;&lt;p class=&quot;muted&quot;&gt;ร่วมแลกเปลี่ยนโดยไม่ระบุข้อมูลส่วนตัวของผู้ถูกแจ้ง&lt;/p&gt;&lt;label class=&quot;field&quot;&gt;ความคิดเห็น&lt;input placeholder=&quot;เขียนความคิดเห็น...&quot;&gt;&lt;/label&gt;&lt;button class=&quot;button secondary&quot; data-action=&quot;social-send&quot;&gt;ส่งความคิดเห็น&lt;/button&gt;&lt;div class=&quot;social-replies&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/article&gt;`;
+const views={
+appicon:()=&gt;`&lt;div class=&quot;icon-showcase&quot;&gt;${emblem()}&lt;h1&gt;Scam&lt;span&gt;Safe&lt;/span&gt;&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;เช็กก่อนโอน รู้ทันไปด้วยกัน&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;launcher&quot;&gt;&lt;div class=&quot;launcher-grid&quot;&gt;&lt;div class=&quot;launcher-app&quot;&gt;&lt;span class=&quot;launcher-neutral&quot;&gt;${icon(&#x27;image&#x27;)}&lt;/span&gt;รูปภาพ&lt;/div&gt;&lt;button class=&quot;launcher-app&quot; data-go=&quot;splash&quot; aria-label=&quot;เปิดแอป Scam Safe&quot;&gt;${emblem(true)}Scam Safe&lt;/button&gt;&lt;div class=&quot;launcher-app&quot;&gt;&lt;span class=&quot;launcher-neutral&quot;&gt;${icon(&#x27;camera&#x27;)}&lt;/span&gt;กล้อง&lt;/div&gt;&lt;div class=&quot;launcher-app&quot;&gt;&lt;span class=&quot;launcher-neutral&quot;&gt;${icon(&#x27;calendar-days&#x27;)}&lt;/span&gt;ปฏิทิน&lt;/div&gt;&lt;div class=&quot;launcher-app&quot;&gt;&lt;span class=&quot;launcher-neutral&quot;&gt;${icon(&#x27;notebook&#x27;)}&lt;/span&gt;โน้ต&lt;/div&gt;&lt;div class=&quot;launcher-app&quot;&gt;&lt;span class=&quot;launcher-neutral&quot;&gt;${icon(&#x27;settings&#x27;)}&lt;/span&gt;ตั้งค่า&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;${btn(&#x27;เปิด Scam Safe&#x27;,&#x27;splash&#x27;)}`,
+splash:()=&gt;`&lt;div class=&quot;splash&quot;&gt;${emblem()}&lt;h1&gt;Scam&lt;br&gt;Safe&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;เช็กก่อนโอน&lt;br&gt;รู้ทันไปด้วยกัน&lt;/p&gt;${btn(&#x27;เริ่มต้นใช้งาน&#x27;,&#x27;home&#x27;)}&lt;/div&gt;`,
+home:()=&gt;`&lt;div class=&quot;row between small muted&quot;&gt;&lt;span&gt;เช็กก่อน จ่ายมั่นใจขึ้น&lt;/span&gt;&lt;span class=&quot;pill&quot;&gt;ใช้ฟรี&lt;/span&gt;&lt;/div&gt;&lt;h1&gt;ก่อนโอน&lt;br&gt;ลองเช็กกันก่อน&lt;/h1&gt;&lt;div class=&quot;hero&quot;&gt;&lt;div class=&quot;eyebrow&quot;&gt;PAUSE. CHECK. PAY.&lt;/div&gt;&lt;h2 style=&quot;margin-top:14px&quot;&gt;ทุกการโอน&lt;br&gt;เริ่มจากข้อมูลที่มากขึ้น&lt;/h2&gt;&lt;p class=&quot;small&quot;&gt;ค้นหาเบอร์โทร บัญชีธนาคาร&lt;br&gt;หรือลิงก์ร้านค้าที่กำลังจะโอนให้&lt;/p&gt;${btn(&#x27;ค้นหาข้อมูล&#x27;,&#x27;search&#x27;)}&lt;/div&gt;&lt;div class=&quot;two&quot;&gt;&lt;button class=&quot;shortcut&quot; data-go=&quot;report&quot;&gt;${icon(&#x27;file-plus-2&#x27;)}แจ้งเหตุที่พบ&lt;span&gt;เก็บข้อมูลและหลักฐาน&lt;/span&gt;&lt;/button&gt;&lt;button class=&quot;shortcut&quot; data-go=&quot;community&quot;&gt;${icon(&#x27;messages-square&#x27;)}เรียนรู้จากกัน&lt;span&gt;อ่านและแชร์ประสบการณ์&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;row between section&quot;&gt;&lt;h3&gt;เรื่องที่อยากให้รู้ทัน&lt;/h3&gt;&lt;button class=&quot;textlink&quot; data-go=&quot;community&quot;&gt;ดูทั้งหมด&lt;/button&gt;&lt;/div&gt;${story(&#x27;เพจที่พักดูจริง… แต่ควรเช็กอะไรอีก?&#x27;,&#x27;จองที่พัก&#x27;,&#x27;ก่อนจ่ายมัดจำ ลองตรวจช่องทางติดต่อกับที่พักโดยตรงอีกครั้ง&#x27;)}`,
+search:()=&gt;`&lt;h1&gt;เช็กข้อมูลก่อนโอน&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;เลือกสิ่งที่คุณมี แล้วค้นหารายงานที่เกี่ยวข้อง&lt;/p&gt;&lt;div class=&quot;tabs&quot;&gt;${[&#x27;เบอร์โทร&#x27;,&#x27;บัญชีธนาคาร&#x27;,&#x27;ลิงก์ / เพจ&#x27;].map(x=&gt;`&lt;button class=&quot;chip ${searchType===x?&#x27;active&#x27;:&#x27;&#x27;}&quot; data-type=&quot;${x}&quot;&gt;${x}&lt;/button&gt;`).join(&#x27;&#x27;)}&lt;/div&gt;${searchType===&#x27;บัญชีธนาคาร&#x27;?&#x27;&lt;label class=&quot;field&quot;&gt;ธนาคาร&lt;select&gt;&lt;option&gt;เลือกธนาคาร&lt;/option&gt;&lt;option&gt;กรุงไทย&lt;/option&gt;&lt;option&gt;กสิกรไทย&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;&#x27;:&#x27;&#x27;}${field(searchType,&#x27;query&#x27;,searchType===&#x27;เบอร์โทร&#x27;?&#x27;กรอกเบอร์โทรที่ต้องการค้นหา&#x27;:searchType===&#x27;บัญชีธนาคาร&#x27;?&#x27;กรอกเลขบัญชี&#x27;:&#x27;วางลิงก์ร้านค้าหรือเพจ&#x27;)}&lt;button class=&quot;button&quot; data-go=&quot;found&quot;&gt;${icon(&#x27;search&#x27;)}ค้นหารายงาน&lt;/button&gt;${note(&#x27;ค้นหาข้อมูลเฉพาะรายการที่คุณกรอก ไม่แสดงข้อมูลส่วนตัวในพื้นที่ชุมชน&#x27;)}&lt;div class=&quot;surface section&quot;&gt;&lt;h3&gt;ลองดูผลลัพธ์ตัวอย่าง&lt;/h3&gt;&lt;p class=&quot;small muted&quot;&gt;เลือกเพื่อสำรวจหน้าจอทั้ง 3 สถานะ&lt;/p&gt;&lt;button class=&quot;listrow&quot; data-go=&quot;found&quot;&gt;${icon(&#x27;file-search&#x27;)}&lt;div&gt;พบรายงาน&lt;/div&gt;${icon(&#x27;chevron-right&#x27;)}&lt;/button&gt;&lt;button class=&quot;listrow&quot; data-go=&quot;none&quot;&gt;${icon(&#x27;search&#x27;)}&lt;div&gt;ไม่พบรายงาน&lt;/div&gt;${icon(&#x27;chevron-right&#x27;)}&lt;/button&gt;&lt;button class=&quot;listrow&quot; data-go=&quot;error&quot;&gt;${icon(&#x27;cloud-off&#x27;)}&lt;div&gt;ระบบขัดข้อง&lt;/div&gt;${icon(&#x27;chevron-right&#x27;)}&lt;/button&gt;&lt;/div&gt;`,
+found:()=&gt;`&lt;span class=&quot;pill&quot;&gt;ผลการค้นหา · ข้อมูลสมมติ&lt;/span&gt;&lt;h1&gt;พบรายงาน&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;เบอร์โทร 09X-XXX-1234&lt;/p&gt;&lt;div class=&quot;surface warn&quot;&gt;&lt;div class=&quot;row between&quot;&gt;&lt;span&gt;${icon(&#x27;files&#x27;)} จำนวนรายงาน&lt;/span&gt;&lt;span class=&quot;pill warn&quot;&gt;ข้อมูลจากผู้ใช้งาน&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;result-number&quot; style=&quot;margin-top:15px&quot;&gt;3 &lt;span&gt;ครั้ง&lt;/span&gt;&lt;/div&gt;&lt;p class=&quot;small&quot;&gt;พบรายงาน 3 ครั้ง&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;surface&quot;&gt;&lt;h3&gt;สิ่งที่ปรากฏในรายงาน&lt;/h3&gt;&lt;div class=&quot;listrow&quot;&gt;&lt;div&gt;ประเภทเหตุการณ์&lt;p&gt;ซื้อขายออนไลน์&lt;/p&gt;&lt;/div&gt;${icon(&#x27;shopping-bag&#x27;)}&lt;/div&gt;&lt;div class=&quot;listrow&quot;&gt;&lt;div&gt;รายงานล่าสุด&lt;p&gt;18 กันยายน 2569&lt;/p&gt;&lt;/div&gt;${icon(&#x27;calendar-days&#x27;)}&lt;/div&gt;&lt;button class=&quot;listrow&quot; data-go=&quot;related&quot;&gt;&lt;div&gt;ข้อมูลที่เชื่อมโยง&lt;p&gt;2 บัญชีที่ถูกอ้างถึงในรายงาน&lt;/p&gt;&lt;/div&gt;${icon(&#x27;chevron-right&#x27;)}&lt;/button&gt;&lt;/div&gt;${btn(&#x27;ตรวจข้อมูลเพิ่มเติมก่อนโอน&#x27;,&#x27;related&#x27;)}${btn(&#x27;แจ้งเหตุเกี่ยวกับข้อมูลนี้&#x27;,&#x27;report&#x27;,true)}&lt;button class=&quot;textlink&quot; data-go=&quot;dispute&quot;&gt;ข้อมูลไม่ถูกต้อง? ขอแก้ไขข้อมูล&lt;/button&gt;`,
+none:()=&gt;`&lt;div class=&quot;empty&quot;&gt;&lt;div class=&quot;big-icon&quot;&gt;${icon(&#x27;search&#x27;)}&lt;/div&gt;&lt;h1&gt;ปัจจุบันไม่พบรายงาน&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;เบอร์โทร 09X-XXX-5678&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;surface&quot;&gt;&lt;h3&gt;เช็กให้ตรงอีกครั้ง&lt;/h3&gt;&lt;p class=&quot;muted&quot;&gt;ตรวจตัวเลขหรือค้นหาด้วยข้อมูลอื่นที่คุณมี เช่น บัญชีธนาคารหรือลิงก์ร้านค้า&lt;/p&gt;&lt;/div&gt;${btn(&#x27;ค้นหาข้อมูลอื่น&#x27;,&#x27;search&#x27;)}${btn(&#x27;แจ้งเหตุที่พบ&#x27;,&#x27;report&#x27;,true)}`,
+error:()=&gt;`&lt;div class=&quot;empty&quot;&gt;&lt;div class=&quot;big-icon&quot;&gt;${icon(&#x27;cloud-off&#x27;)}&lt;/div&gt;&lt;h1&gt;ขออภัย ไม่สามารถ&lt;br&gt;ตรวจสอบได้ในขณะนี้&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;โปรดลองใหม่อีกครั้งในภายหลัง&lt;/p&gt;&lt;/div&gt;&lt;button class=&quot;button&quot; data-go=&quot;search&quot;&gt;${icon(&#x27;rotate-cw&#x27;)}ลองอีกครั้ง&lt;/button&gt;${btn(&#x27;กลับหน้าแรก&#x27;,&#x27;home&#x27;,true)}`,
+related:()=&gt;`&lt;span class=&quot;pill&quot;&gt;จากรายงานของผู้ใช้งาน&lt;/span&gt;&lt;h1&gt;ข้อมูลที่เชื่อมโยง&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;ข้อมูลที่ปรากฏร่วมกับเบอร์&lt;br&gt;09X-XXX-1234 ในรายงานที่ได้รับ&lt;/p&gt;&lt;div class=&quot;surface&quot;&gt;&lt;span class=&quot;pill warn&quot;&gt;เชื่อมโยงจากรายงาน&lt;/span&gt;&lt;h3 style=&quot;margin-top:15px&quot;&gt;ธนาคารกรุงไทย&lt;/h3&gt;&lt;p&gt;XXX-X-X1234-X&lt;/p&gt;&lt;div class=&quot;small muted&quot;&gt;ชื่อที่ระบุ: ก••• ส•••&lt;br&gt;ปรากฏร่วมกันใน 2 รายงาน&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;surface&quot;&gt;&lt;span class=&quot;pill warn&quot;&gt;เชื่อมโยงจากรายงาน&lt;/span&gt;&lt;h3 style=&quot;margin-top:15px&quot;&gt;ธนาคารกสิกรไทย&lt;/h3&gt;&lt;p&gt;XXX-X-X5678-X&lt;/p&gt;&lt;div class=&quot;small muted&quot;&gt;ชื่อที่ระบุ: ก••• ส•••&lt;br&gt;ปรากฏร่วมกันใน 1 รายงาน&lt;/div&gt;&lt;/div&gt;${note(&#x27;แสดงเฉพาะบัญชีที่มีผู้รายงาน ไม่ใช่จำนวนบัญชีทั้งหมดของบุคคล และชื่อเหมือนกันไม่ได้หมายถึงคนเดียวกัน&#x27;)}${btn(&#x27;กลับไปผลค้นหา&#x27;,&#x27;found&#x27;,true)}`,
+login:()=&gt;`&lt;div class=&quot;big-icon&quot;&gt;${icon(&#x27;smartphone&#x27;)}&lt;/div&gt;&lt;h1&gt;เก็บเรื่องของคุณ&lt;br&gt;ไว้ในที่เดียว&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;ยืนยันเบอร์โทรเพื่อแจ้งเหตุ แชร์ประสบการณ์ และติดตามเรื่องของคุณ&lt;/p&gt;${field(&#x27;เบอร์โทรศัพท์&#x27;,&#x27;phone&#x27;,&#x27;08X-XXX-XXXX&#x27;,&#x27;tel&#x27;)}&lt;label class=&quot;check&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;accept&quot;&gt;&lt;span&gt;ยอมรับเงื่อนไขการใช้งานและรับทราบการใช้ข้อมูลส่วนบุคคล&lt;/span&gt;&lt;/label&gt;&lt;button class=&quot;button&quot; data-action=&quot;otp&quot;&gt;รับรหัส OTP&lt;/button&gt;&lt;div id=&quot;form-message&quot;&gt;&lt;/div&gt;${note(&#x27;เบอร์โทรของคุณไม่แสดงต่อสมาชิกในชุมชน&#x27;)}`,
+otp:()=&gt;`&lt;div class=&quot;big-icon&quot;&gt;${icon(&#x27;message-square-lock&#x27;)}&lt;/div&gt;&lt;h1&gt;ยืนยันว่าเป็นคุณ&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;กรอกรหัส 6 หลักที่ส่งไปยังเบอร์ของคุณ&lt;/p&gt;${field(&#x27;รหัส OTP&#x27;,&#x27;otp&#x27;,&#x27;กรอก 6 หลัก&#x27;,&#x27;text&#x27;)}&lt;p class=&quot;small muted&quot;&gt;ต้นแบบ: ใช้รหัส 123456&lt;/p&gt;&lt;button class=&quot;button&quot; data-action=&quot;verify&quot;&gt;ยืนยันและดำเนินการต่อ&lt;/button&gt;&lt;button class=&quot;textlink&quot; data-action=&quot;resend&quot;&gt;ส่งรหัสอีกครั้ง&lt;/button&gt;&lt;div id=&quot;form-message&quot;&gt;&lt;/div&gt;`,
+report:()=&gt;`${steps(1)}&lt;h1&gt;เกิดอะไรขึ้นบ้าง?&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;รายละเอียดนี้ใช้สำหรับรายงานส่วนตัว&lt;br&gt;ยังไม่ใช่โพสต์ในชุมชน&lt;/p&gt;&lt;label class=&quot;field&quot;&gt;ประเภทเหตุการณ์&lt;select id=&quot;category&quot;&gt;&lt;option&gt;ซื้อขายออนไลน์&lt;/option&gt;&lt;option&gt;จองที่พัก&lt;/option&gt;&lt;option&gt;หลอกลงทุน&lt;/option&gt;&lt;option&gt;อื่น ๆ&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;${field(&#x27;ข้อมูลที่ต้องการรายงาน&#x27;,&#x27;identifier&#x27;,&#x27;เบอร์โทร เลขบัญชี หรือลิงก์&#x27;)}${field(&#x27;วันที่เกิดเหตุ&#x27;,&#x27;date&#x27;,&#x27;วว/ดด/ปปปป&#x27;,&#x27;date&#x27;)}${field(&#x27;มูลค่าความเสียหาย (บาท)&#x27;,&#x27;amount&#x27;,&#x27;เช่น 1,500&#x27;,&#x27;number&#x27;)}&lt;label class=&quot;field&quot;&gt;เล่าเหตุการณ์&lt;textarea id=&quot;incident&quot; placeholder=&quot;ติดต่อกันอย่างไร เกิดเหตุการณ์อะไรขึ้น&quot;&gt;&lt;/textarea&gt;&lt;/label&gt;${btn(&#x27;ถัดไป · เพิ่มหลักฐาน&#x27;,&#x27;evidence&#x27;)}`,
+evidence:()=&gt;`${steps(2)}&lt;h1&gt;เพิ่มหลักฐาน&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;เช่น สลิปโอนเงิน บทสนทนา&lt;br&gt;หรือภาพหน้าร้านที่ติดต่อ&lt;/p&gt;&lt;button class=&quot;upload&quot; data-action=&quot;upload&quot;&gt;${icon(&#x27;upload-cloud&#x27;)}&lt;h3 style=&quot;margin-top:12px&quot;&gt;${uploaded?&#x27;เพิ่มหลักฐานแล้ว 1 ไฟล์&#x27;:&#x27;เลือกไฟล์หลักฐาน&#x27;}&lt;/h3&gt;&lt;span class=&quot;small muted&quot;&gt;${uploaded?&#x27;slip-demo.jpg · ตัวอย่างไฟล์&#x27;:&#x27;JPG, PNG, PDF · ไม่เกิน 10 MB / ไฟล์&#x27;}&lt;/span&gt;&lt;/button&gt;${uploaded?&#x27;&lt;div class=&quot;surface section row&quot;&gt;&#x27;+icon(&#x27;file-image&#x27;)+&#x27;&lt;div&gt;&lt;h3&gt;slip-demo.jpg&lt;/h3&gt;&lt;span class=&quot;small muted&quot;&gt;ไฟล์ตัวอย่างสำหรับต้นแบบ&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#x27;:&#x27;&#x27;}${note(&#x27;หลักฐานเก็บเป็นส่วนตัว เฉพาะเจ้าหน้าที่ที่ได้รับสิทธิ์เข้าถึง ไม่ปรากฏในชุมชน&#x27;)}&lt;div class=&quot;surface section&quot;&gt;&lt;h3&gt;ก่อนเพิ่มไฟล์&lt;/h3&gt;&lt;p class=&quot;small muted&quot;&gt;เลือกหลักฐานที่เกี่ยวกับเหตุการณ์ และหลีกเลี่ยงข้อมูลของบุคคลอื่นที่ไม่เกี่ยวข้อง&lt;/p&gt;&lt;/div&gt;&lt;button class=&quot;button&quot; data-action=&quot;review&quot;&gt;ตรวจสอบรายงาน&lt;/button&gt;&lt;div id=&quot;form-message&quot;&gt;&lt;/div&gt;`,
+review:()=&gt;`${steps(3)}&lt;h1&gt;ตรวจอีกนิด&lt;br&gt;ก่อนส่งรายงาน&lt;/h1&gt;&lt;div class=&quot;surface&quot;&gt;&lt;span class=&quot;pill&quot;&gt;รายงานส่วนตัว&lt;/span&gt;&lt;h3 style=&quot;margin-top:15px&quot;&gt;${draft.category||&#x27;ซื้อขายออนไลน์&#x27;}&lt;/h3&gt;&lt;p class=&quot;small muted&quot;&gt;รายละเอียดและข้อมูลที่คุณกรอกจะถูกส่งพร้อมหลักฐาน&lt;/p&gt;&lt;div class=&quot;listrow&quot;&gt;&lt;div&gt;ข้อมูลที่รายงาน&lt;p&gt;${escape(draft.identifier||&#x27;ข้อมูลตัวอย่างที่ผู้ใช้กรอก&#x27;)}&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;listrow&quot;&gt;&lt;div&gt;ความเสียหาย&lt;p&gt;${escape(draft.amount||&#x27;1,500&#x27;)} บาท&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;listrow&quot;&gt;&lt;div&gt;หลักฐาน&lt;p&gt;1 ไฟล์ · ไม่เผยแพร่สาธารณะ&lt;/p&gt;&lt;/div&gt;${icon(&#x27;lock-keyhole&#x27;)}&lt;/div&gt;&lt;/div&gt;&lt;label class=&quot;check&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;confirm&quot;&gt;&lt;span&gt;ข้อมูลนี้เป็นประสบการณ์ที่ฉันพบ และให้ข้อมูลตามที่ทราบ&lt;/span&gt;&lt;/label&gt;&lt;button class=&quot;button&quot; data-action=&quot;submit&quot;&gt;ส่งรายงาน&lt;/button&gt;&lt;div id=&quot;form-message&quot;&gt;&lt;/div&gt;${btn(&#x27;ย้อนกลับไปแก้ไข&#x27;,&#x27;report&#x27;,true)}`,
+sent:()=&gt;`&lt;div class=&quot;empty&quot;&gt;&lt;div class=&quot;big-icon mint&quot;&gt;${icon(&#x27;check&#x27;)}&lt;/div&gt;&lt;h1&gt;ได้รับรายงานแล้ว&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;หมายเลขอ้างอิง KO-260923-014&lt;br&gt;ติดตามความคืบหน้าได้ใน “เรื่องของฉัน”&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;surface&quot;&gt;&lt;h3&gt;ต่อจากนี้เป็นอย่างไร?&lt;/h3&gt;&lt;p class=&quot;small muted&quot;&gt;ระบบตรวจความครบถ้วน ไฟล์แนบ และข้อมูลซ้ำ ก่อนนำรายงานไปแสดงตามเงื่อนไข&lt;/p&gt;&lt;/div&gt;${btn(&#x27;ติดตามรายงาน&#x27;,&#x27;detail&#x27;)}${btn(&#x27;แชร์บทเรียนให้ชุมชน&#x27;,&#x27;compose&#x27;,true)}${note(&#x27;การส่งรายงานในแอปยังไม่ใช่การแจ้งความ&#x27;)}`,
+community:()=&gt;`&lt;div class=&quot;social-top&quot;&gt;&lt;div class=&quot;row between&quot;&gt;&lt;h1&gt;ชุมชน&lt;/h1&gt;&lt;span class=&quot;pill&quot;&gt;รู้ทันไปด้วยกัน&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;tabs&quot;&gt;${[&#x27;ทั้งหมด&#x27;,&#x27;ซื้อขาย&#x27;,&#x27;ที่พัก&#x27;].map(x=&gt;`&lt;button class=&quot;chip ${filter===x?&#x27;active&#x27;:&#x27;&#x27;}&quot; data-filter=&quot;${x}&quot;&gt;${x}&lt;/button&gt;`).join(&#x27;&#x27;)}&lt;/div&gt;&lt;/div&gt;&lt;button class=&quot;social-compose&quot; data-go=&quot;compose&quot;&gt;&lt;span class=&quot;avatar&quot;&gt;พ.&lt;/span&gt;&lt;span&gt;มีประสบการณ์อะไรอยากแชร์?&lt;/span&gt;${icon(&#x27;square-pen&#x27;)}&lt;/button&gt;&lt;section aria-label=&quot;ฟีดประสบการณ์&quot;&gt;${socialPosts.map((p,i)=&gt;({p,i})).filter(({p})=&gt;filter===&#x27;ทั้งหมด&#x27;||(filter===&#x27;ที่พัก&#x27;?p.tag===&#x27;จองที่พัก&#x27;:p.tag===&#x27;ซื้อขายออนไลน์&#x27;)).map(({p,i})=&gt;socialPost(p,i)).join(&#x27;&#x27;)}&lt;/section&gt;&lt;div class=&quot;social-end&quot;&gt;อ่านโพสต์ตัวอย่างครบแล้ว · ข้อมูลสมมติ&lt;/div&gt;`,
+story:()=&gt;`&lt;span class=&quot;pill&quot;&gt;จองที่พัก&lt;/span&gt;&lt;h1&gt;จองห้องพักผ่านเพจ&lt;br&gt;ต้องเช็กตรงไหนบ้าง?&lt;/h1&gt;&lt;div class=&quot;row&quot;&gt;&lt;span class=&quot;avatar&quot;&gt;ม.&lt;/span&gt;&lt;div&gt;&lt;strong&gt;มะลิ&lt;/strong&gt;&lt;div class=&quot;small muted&quot;&gt;นามแฝง · 2 ชั่วโมงที่ผ่านมา&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style=&quot;margin-top:22px&quot;&gt;เราเจอเพจที่พักที่มีรูปสวยและรีวิวเยอะ พอคุยแล้วได้รับข้อเสนอให้รีบจ่ายมัดจำเพื่อเก็บห้องไว้&lt;/p&gt;&lt;p&gt;หลังโอนแล้วกลับติดต่อไม่ได้ เลยอยากแชร์ว่า ควรหาช่องทางติดต่อที่พักด้วยตัวเองอีกทาง แล้วตรวจสอบการจองก่อนจ่ายเงิน&lt;/p&gt;&lt;div class=&quot;surface mint&quot;&gt;&lt;h3&gt;${icon(&#x27;lightbulb&#x27;)} สิ่งที่เราได้เรียนรู้&lt;/h3&gt;&lt;p class=&quot;small&quot;&gt;อย่าใช้แค่รูปและจำนวนรีวิวตัดสิน ลองโทรหาที่พักผ่านช่องทางที่ค้นหาแยกเองด้วย&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;row between&quot;&gt;&lt;button class=&quot;textlink&quot; data-action=&quot;save&quot;&gt;${icon(&#x27;bookmark&#x27;)} บันทึกเรื่อง&lt;/button&gt;&lt;button class=&quot;textlink&quot; data-action=&quot;flag&quot;&gt;รายงานเนื้อหา&lt;/button&gt;&lt;/div&gt;&lt;div id=&quot;story-message&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;&lt;h3 class=&quot;section&quot;&gt;ความคิดเห็น&lt;/h3&gt;&lt;div class=&quot;surface&quot;&gt;&lt;strong class=&quot;small&quot;&gt;เพื่อนร่วมทาง&lt;/strong&gt;&lt;p class=&quot;small&quot;&gt;ขอบคุณที่แชร์ค่ะ เราจะตรวจการจองกับที่พักก่อนทุกครั้ง&lt;/p&gt;&lt;/div&gt;&lt;label class=&quot;field&quot;&gt;ร่วมพูดคุย&lt;textarea id=&quot;comment&quot; placeholder=&quot;แชร์คำแนะนำโดยไม่ระบุชื่อหรือข้อมูลส่วนตัวของผู้ถูกแจ้ง&quot;&gt;&lt;/textarea&gt;&lt;/label&gt;&lt;button class=&quot;button&quot; data-action=&quot;comment&quot;&gt;ส่งความคิดเห็น&lt;/button&gt;&lt;div id=&quot;comment-message&quot;&gt;&lt;/div&gt;`,
+compose:()=&gt;`&lt;span class=&quot;pill&quot;&gt;โพสต์สาธารณะ&lt;/span&gt;&lt;h1&gt;เรื่องของคุณ&lt;br&gt;ช่วยให้คนอื่นรู้ทัน&lt;/h1&gt;&lt;div class=&quot;surface mint&quot;&gt;&lt;h3&gt;${icon(&#x27;eye-off&#x27;)} เล่าเหตุการณ์ ไม่ระบุตัวบุคคล&lt;/h3&gt;&lt;p class=&quot;small&quot;&gt;ไม่ใส่ชื่อ เบอร์โทร เลขบัญชี หรือลิงก์ที่ระบุตัวผู้ถูกแจ้ง หลักฐานให้อัปโหลดในส่วนแจ้งเหตุ&lt;/p&gt;&lt;/div&gt;${field(&#x27;หัวข้อเรื่อง&#x27;,&#x27;title&#x27;,&#x27;บทเรียนที่อยากแชร์&#x27;)}&lt;label class=&quot;field&quot;&gt;ประสบการณ์ของคุณ&lt;textarea id=&quot;post&quot; placeholder=&quot;เกิดอะไรขึ้น และอยากแนะนำให้คนอื่นระวังอย่างไร&quot;&gt;&lt;/textarea&gt;&lt;/label&gt;&lt;span class=&quot;small muted&quot;&gt;แสดงในนาม “เพื่อน Scam Safe”&lt;/span&gt;&lt;button class=&quot;button&quot; data-action=&quot;publish&quot;&gt;เผยแพร่ประสบการณ์&lt;/button&gt;&lt;div id=&quot;form-message&quot;&gt;&lt;/div&gt;`,
+tracking:()=&gt;`&lt;h1&gt;เรื่องของฉัน&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;ติดตามข้อมูลที่คุณส่งไว้กับเรา&lt;/p&gt;&lt;button class=&quot;surface feed&quot; data-go=&quot;detail&quot;&gt;&lt;div class=&quot;row between&quot;&gt;&lt;span class=&quot;pill&quot;&gt;กำลังประมวลผล&lt;/span&gt;&lt;span class=&quot;small muted&quot;&gt;23 ก.ย.&lt;/span&gt;&lt;/div&gt;&lt;h3&gt;รายงานซื้อขายออนไลน์&lt;/h3&gt;&lt;p&gt;KO-260923-014&lt;/p&gt;&lt;div class=&quot;row between small&quot;&gt;&lt;span&gt;รายละเอียดและสถานะ&lt;/span&gt;${icon(&#x27;arrow-up-right&#x27;)}&lt;/div&gt;&lt;/button&gt;&lt;div class=&quot;surface&quot;&gt;&lt;span class=&quot;pill neutral&quot;&gt;ยังไม่มีโพสต์&lt;/span&gt;&lt;h3 style=&quot;margin-top:13px&quot;&gt;แชร์สิ่งที่ได้เรียนรู้&lt;/h3&gt;&lt;p class=&quot;small muted&quot;&gt;ช่วยให้คนอื่นสังเกตเหตุการณ์คล้ายกันได้ทัน&lt;/p&gt;${btn(&#x27;เขียนประสบการณ์&#x27;,&#x27;compose&#x27;,true)}&lt;/div&gt;`,
+detail:()=&gt;`&lt;span class=&quot;pill&quot;&gt;KO-260923-014&lt;/span&gt;&lt;h1&gt;สถานะรายงาน&lt;/h1&gt;&lt;div class=&quot;surface&quot;&gt;&lt;h3&gt;รายงานซื้อขายออนไลน์&lt;/h3&gt;&lt;p class=&quot;small muted&quot;&gt;ส่งเมื่อ 23 ก.ย. 2569 · 09:41 น.&lt;/p&gt;&lt;span class=&quot;pill&quot;&gt;กำลังประมวลผล&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;timeline&quot;&gt;&lt;div class=&quot;event&quot;&gt;&lt;strong&gt;ได้รับรายงานแล้ว&lt;/strong&gt;&lt;p&gt;ข้อมูลและหลักฐานถูกเก็บเป็นส่วนตัว&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;event&quot;&gt;&lt;strong&gt;กำลังตรวจเงื่อนไขข้อมูล&lt;/strong&gt;&lt;p&gt;ตรวจความครบถ้วน รายการซ้ำ และไฟล์แนบ&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;event&quot;&gt;&lt;strong class=&quot;muted&quot;&gt;พิจารณาส่งต่อเมื่อเข้าเงื่อนไข&lt;/strong&gt;&lt;p&gt;ยังไม่มีการส่งต่อหน่วยงานในรายงานนี้&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;${note(&#x27;สถานะนี้เป็นขั้นตอนของระบบ ไม่ใช่ผลการตัดสินคดี&#x27;)}${btn(&#x27;เพิ่มข้อมูลให้รายงาน&#x27;,&#x27;evidence&#x27;,true)}&lt;button class=&quot;textlink&quot; data-go=&quot;dispute&quot;&gt;ขอแก้ไขหรือถอนข้อมูล&lt;/button&gt;`,
+notifications:()=&gt;`&lt;h1&gt;การแจ้งเตือน&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;ความคืบหน้าที่เกี่ยวกับคุณ&lt;/p&gt;&lt;button class=&quot;listrow&quot; data-go=&quot;detail&quot;&gt;&lt;span class=&quot;avatar&quot;&gt;${icon(&#x27;file-check-2&#x27;)}&lt;/span&gt;&lt;div&gt;&lt;strong&gt;ได้รับรายงานของคุณแล้ว&lt;/strong&gt;&lt;p&gt;KO-260923-014 · เมื่อสักครู่&lt;/p&gt;&lt;/div&gt;${icon(&#x27;chevron-right&#x27;)}&lt;/button&gt;&lt;button class=&quot;listrow&quot; data-go=&quot;story&quot;&gt;&lt;span class=&quot;avatar&quot;&gt;${icon(&#x27;message-circle&#x27;)}&lt;/span&gt;&lt;div&gt;&lt;strong&gt;มีคนร่วมแลกเปลี่ยนในชุมชน&lt;/strong&gt;&lt;p&gt;อ่านคำแนะนำเกี่ยวกับการจองที่พัก&lt;/p&gt;&lt;/div&gt;${icon(&#x27;chevron-right&#x27;)}&lt;/button&gt;`,
+profile:()=&gt;`&lt;div class=&quot;row&quot; style=&quot;margin:18px 0 24px&quot;&gt;&lt;span class=&quot;avatar&quot; style=&quot;width:58px;height:58px;font-size:20px&quot;&gt;พ.&lt;/span&gt;&lt;div&gt;&lt;h2&gt;เพื่อน Scam Safe&lt;/h2&gt;&lt;span class=&quot;small muted&quot;&gt;นามแฝงสำหรับชุมชน&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;${[[&#x27;clipboard-list&#x27;,&#x27;เรื่องของฉัน&#x27;,&#x27;tracking&#x27;],[&#x27;bell&#x27;,&#x27;การแจ้งเตือน&#x27;,&#x27;notifications&#x27;],[&#x27;file-pen-line&#x27;,&#x27;ขอแก้ไขข้อมูล&#x27;,&#x27;dispute&#x27;],[&#x27;log-in&#x27;,verified?&#x27;ยืนยันเบอร์แล้ว&#x27;:&#x27;เข้าสู่ระบบ / ยืนยันเบอร์&#x27;,&#x27;login&#x27;]].map(([i,t,to])=&gt;`&lt;button class=&quot;listrow&quot; data-go=&quot;${to}&quot;&gt;${icon(i)}&lt;div&gt;${t}&lt;/div&gt;${icon(&#x27;chevron-right&#x27;)}&lt;/button&gt;`).join(&#x27;&#x27;)}&lt;div class=&quot;surface section&quot;&gt;&lt;h3&gt;${icon(&#x27;shield&#x27;)} พื้นที่ส่วนตัวของคุณ&lt;/h3&gt;&lt;p class=&quot;small muted&quot;&gt;รายงานและหลักฐานแยกจากโพสต์สาธารณะ ชุมชนจะแสดงเฉพาะนามแฝงและเรื่องที่คุณเลือกแชร์&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;small muted&quot;&gt;Scam Safe · ต้นแบบสำหรับโครงงาน FinTech&lt;/div&gt;`,
+dispute:()=&gt;`&lt;h1&gt;ขอแก้ไขข้อมูล&lt;/h1&gt;&lt;p class=&quot;muted&quot;&gt;แจ้งข้อมูลที่คลาดเคลื่อน หรือขอให้ตรวจสอบรายงานที่เกี่ยวข้องกับคุณ&lt;/p&gt;${field(&#x27;หมายเลขรายงาน / ข้อมูลที่เกี่ยวข้อง&#x27;,&#x27;ref&#x27;,&#x27;เช่น KO-260923-014&#x27;)}&lt;label class=&quot;field&quot;&gt;เหตุผล&lt;textarea id=&quot;reason&quot; placeholder=&quot;ระบุส่วนที่ต้องการแก้ไข พร้อมคำอธิบาย&quot;&gt;&lt;/textarea&gt;&lt;/label&gt;&lt;button class=&quot;upload&quot; data-action=&quot;dispute-file&quot;&gt;${icon(&#x27;paperclip&#x27;)} แนบข้อมูลประกอบ&lt;/button&gt;${note(&#x27;คำร้องนี้เป็นส่วนตัว ทีมงานจะตรวจสอบตามขั้นตอน&#x27;)}&lt;button class=&quot;button&quot; data-action=&quot;dispute&quot;&gt;ส่งคำร้อง&lt;/button&gt;&lt;div id=&quot;form-message&quot;&gt;&lt;/div&gt;`
+};
+function escape(v){return String(v).replace(/[&amp;&lt;&gt;&quot;&#x27;]/g,c=&gt;({&#x27;&amp;&#x27;:&#x27;&amp;amp;&#x27;,&#x27;&lt;&#x27;:&#x27;&amp;lt;&#x27;,&#x27;&gt;&#x27;:&#x27;&amp;gt;&#x27;,&#x27;&quot;&#x27;:&#x27;&amp;quot;&#x27;,&quot;&#x27;&quot;:&#x27;&amp;#39;&#x27;}[c]));}
+function capture(){main.querySelectorAll(&#x27;input[id],textarea[id],select[id]&#x27;).forEach(x=&gt;{if(x.type!==&#x27;checkbox&#x27;)draft[x.id]=x.value});}
+function go(next,save=true){if(!views[next])next=&#x27;home&#x27;;page=next;picker.value=page;const isHome=page===&#x27;home&#x27;;head.innerHTML=isHome?`&lt;div class=&quot;ko-brand&quot;&gt;&lt;span class=&quot;brand-mark&quot;&gt;${icon(&#x27;shield&#x27;)}&lt;/span&gt;Scam Safe&lt;/div&gt;&lt;button class=&quot;ghost&quot; aria-label=&quot;การแจ้งเตือน&quot; data-go=&quot;notifications&quot;&gt;${icon(&#x27;bell&#x27;)}&lt;/button&gt;`:`&lt;button class=&quot;ghost&quot; aria-label=&quot;กลับหน้าแรก&quot; data-go=&quot;home&quot;&gt;${icon(&#x27;arrow-left&#x27;)}&lt;/button&gt;&lt;strong&gt;Scam Safe&lt;/strong&gt;&lt;button class=&quot;ghost&quot; aria-label=&quot;บัญชีของฉัน&quot; data-go=&quot;profile&quot;&gt;${icon(&#x27;user-round&#x27;)}&lt;/button&gt;`;main.innerHTML=views[page]();root.dataset.screen=page;
+const sectionIcons={search:&#x27;scan-search&#x27;,found:&#x27;file-warning&#x27;,related:&#x27;network&#x27;,report:&#x27;file-plus-2&#x27;,evidence:&#x27;image-plus&#x27;,review:&#x27;clipboard-check&#x27;,community:&#x27;messages-square&#x27;,compose:&#x27;pencil-line&#x27;,tracking:&#x27;folder-heart&#x27;,detail:&#x27;route&#x27;,notifications:&#x27;bell-ring&#x27;,dispute:&#x27;file-pen-line&#x27;};
+if(sectionIcons[page]&amp;&amp;page!==&#x27;community&#x27;){const title=main.querySelector(&#x27;h1&#x27;);if(title)title.insertAdjacentHTML(&#x27;beforebegin&#x27;,`&lt;div class=&quot;section-symbol&quot; aria-hidden=&quot;true&quot;&gt;${icon(sectionIcons[page])}&lt;/div&gt;`);}
+const hero=main.querySelector(&#x27;.hero&#x27;);if(hero)hero.querySelector(&#x27;.eyebrow&#x27;).insertAdjacentHTML(&#x27;afterend&#x27;,`&lt;div class=&quot;hero-symbols&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;${icon(&#x27;search&#x27;)}&lt;/span&gt;&lt;span&gt;${icon(&#x27;wallet&#x27;)}&lt;/span&gt;&lt;span&gt;${icon(&#x27;messages-square&#x27;)}&lt;/span&gt;&lt;/div&gt;`);
+main.querySelectorAll(&#x27;.feed&#x27;).forEach(card=&gt;{const tag=card.querySelector(&#x27;.pill&#x27;);if(!tag)return;const hotel=tag.textContent.includes(&#x27;ที่พัก&#x27;),shopping=tag.textContent.includes(&#x27;ซื้อขาย&#x27;);if(hotel||shopping)card.insertAdjacentHTML(&#x27;afterbegin&#x27;,`&lt;div class=&quot;category-art ${shopping?&#x27;shopping&#x27;:&#x27;&#x27;}&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;${hotel?&#x27;STAY SMART&#x27;:&#x27;SHOP SMART&#x27;}&lt;/span&gt;${icon(hotel?&#x27;hotel&#x27;:&#x27;shopping-bag&#x27;)}&lt;/div&gt;`);});
+const tones={&#x27;จองที่พัก&#x27;:[&#x27;hotel&#x27;,&#x27;hotel&#x27;],&#x27;ที่พัก&#x27;:[&#x27;hotel&#x27;,&#x27;hotel&#x27;],&#x27;ซื้อขายออนไลน์&#x27;:[&#x27;shopping&#x27;,&#x27;shopping-bag&#x27;],&#x27;ซื้อขาย&#x27;:[&#x27;shopping&#x27;,&#x27;shopping-bag&#x27;],&#x27;กำลังประมวลผล&#x27;:[&#x27;processing&#x27;,&#x27;hourglass&#x27;],&#x27;รายงานส่วนตัว&#x27;:[&#x27;private&#x27;,&#x27;lock-keyhole&#x27;]};
+main.querySelectorAll(&#x27;.pill,.chip&#x27;).forEach(el=&gt;{const t=tones[el.textContent.trim()];if(t){el.dataset.tone=t[0];el.insertAdjacentHTML(&#x27;afterbegin&#x27;,icon(t[1])+&#x27; &#x27;);}});
+if([&#x27;found&#x27;,&#x27;review&#x27;,&#x27;detail&#x27;,&#x27;tracking&#x27;].includes(page)){main.querySelectorAll(&#x27;h3,.listrow p&#x27;).forEach(el=&gt;{if(el.textContent.trim()===&#x27;ซื้อขายออนไลน์&#x27;||el.textContent.trim()===&#x27;รายงานซื้อขายออนไลน์&#x27;){el.insertAdjacentHTML(&#x27;afterend&#x27;,`&lt;div class=&quot;category-caption&quot;&gt;&lt;span class=&quot;pill&quot; data-tone=&quot;shopping&quot;&gt;${icon(&#x27;shopping-bag&#x27;)} ซื้อขายออนไลน์&lt;/span&gt;&lt;/div&gt;`);}});}
+const category=main.querySelector(&#x27;#category&#x27;);if(category){category.insertAdjacentHTML(&#x27;afterend&#x27;,&#x27;&lt;div id=&quot;category-preview&quot; class=&quot;category-caption&quot;&gt;&lt;/div&gt;&#x27;);const updateCategory=()=&gt;{const v=category.value,t=tones[v]||[&#x27;processing&#x27;,&#x27;layers&#x27;];main.querySelector(&#x27;#category-preview&#x27;).innerHTML=`&lt;span class=&quot;pill&quot; data-tone=&quot;${t[0]}&quot;&gt;${icon(t[1])} ${v}&lt;/span&gt;`;if(globalThis.lucide)lucide.createIcons();};category.addEventListener(&#x27;change&#x27;,updateCategory);updateCategory();}
+root.querySelectorAll(&#x27;button&#x27;).forEach(b=&gt;b.classList.add(&#x27;cursor-interaction&#x27;));
+nav.innerHTML=[[&#x27;home&#x27;,&#x27;house&#x27;,&#x27;หน้าแรก&#x27;],[&#x27;community&#x27;,&#x27;messages-square&#x27;,&#x27;ชุมชน&#x27;],[&#x27;tracking&#x27;,&#x27;clipboard-list&#x27;,&#x27;เรื่องของฉัน&#x27;],[&#x27;profile&#x27;,&#x27;user-round&#x27;,&#x27;บัญชี&#x27;]].map(([id,i,t])=&gt;`&lt;button class=&quot;${page===id?&#x27;active&#x27;:&#x27;&#x27;}&quot; data-go=&quot;${id}&quot;&gt;${icon(i)}${t}&lt;/button&gt;`).join(&#x27;&#x27;);if(globalThis.lucide)lucide.createIcons();if(save&amp;&amp;window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{screen:page},privateContent:{screen:page}}).catch(()=&gt;{});}
+function message(id,text){const el=root.querySelector(&#x27;#&#x27;+id);if(el){el.className=&#x27;inline-alert&#x27;;el.setAttribute(&#x27;role&#x27;,&#x27;status&#x27;);el.textContent=text;}}
+picker.innerHTML=screens.map(([id,t])=&gt;`&lt;option value=&quot;${id}&quot;&gt;${t}&lt;/option&gt;`).join(&#x27;&#x27;);picker.onchange=()=&gt;{capture();go(picker.value)};
+root.addEventListener(&#x27;click&#x27;,e=&gt;{const b=e.target.closest(&#x27;button&#x27;);if(!b)return;capture();if(b.dataset.go){go(b.dataset.go);return;}if(b.dataset.type){searchType=b.dataset.type;go(&#x27;search&#x27;);return;}if(b.dataset.filter){filter=b.dataset.filter;go(&#x27;community&#x27;);return;}
+const a=b.dataset.action;
+if(a?.startsWith(&#x27;social-&#x27;)){const post=b.closest(&#x27;[data-post]&#x27;),id=Number(post.dataset.post);
+if(a===&#x27;social-like&#x27;){socialLiked.has(id)?socialLiked.delete(id):socialLiked.add(id);b.setAttribute(&#x27;aria-pressed&#x27;,String(socialLiked.has(id)));post.querySelector(&#x27;[data-likes]&#x27;).textContent=(socialPosts[id].likes+(socialLiked.has(id)?1:0))+&#x27; คนถูกใจ&#x27;;}
+if(a===&#x27;social-save&#x27;){socialSaved.has(id)?socialSaved.delete(id):socialSaved.add(id);b.setAttribute(&#x27;aria-pressed&#x27;,String(socialSaved.has(id)));b.innerHTML=icon(&#x27;bookmark&#x27;)+(socialSaved.has(id)?&#x27;บันทึกแล้ว&#x27;:&#x27;บันทึก&#x27;);if(globalThis.lucide)lucide.createIcons();}
+if(a===&#x27;social-comment&#x27;){const panel=post.querySelector(&#x27;.social-comments&#x27;);panel.hidden=!panel.hidden;b.setAttribute(&#x27;aria-expanded&#x27;,String(!panel.hidden));}
+if(a===&#x27;social-send&#x27;){const input=post.querySelector(&#x27;.social-comments input&#x27;);if(input.value.trim()){const reply=document.createElement(&#x27;p&#x27;);reply.textContent=&#x27;คุณ · &#x27;+input.value.trim();post.querySelector(&#x27;.social-replies&#x27;).appendChild(reply);input.value=&#x27;&#x27;;}}
+return;}
+
+if(a===&#x27;otp&#x27;){if(!root.querySelector(&#x27;#accept&#x27;).checked||!draft.phone){message(&#x27;form-message&#x27;,&#x27;กรอกเบอร์โทรและยอมรับเงื่อนไขก่อนดำเนินการ&#x27;);return;}go(&#x27;otp&#x27;);}
+if(a===&#x27;verify&#x27;){if(draft.otp!==&#x27;123456&#x27;){message(&#x27;form-message&#x27;,&#x27;ต้นแบบนี้ใช้รหัส 123456&#x27;);return;}verified=true;go(&#x27;report&#x27;);}
+if(a===&#x27;resend&#x27;)message(&#x27;form-message&#x27;,&#x27;ต้นแบบ: ใช้รหัส 123456 โดยไม่มีการส่ง SMS จริง&#x27;);
+if(a===&#x27;upload&#x27;){uploaded=true;go(&#x27;evidence&#x27;);}
+if(a===&#x27;review&#x27;){if(!uploaded){message(&#x27;form-message&#x27;,&#x27;เพิ่มไฟล์ตัวอย่างก่อนตรวจสอบรายงาน&#x27;);return;}go(&#x27;review&#x27;);}
+if(a===&#x27;submit&#x27;){if(!root.querySelector(&#x27;#confirm&#x27;).checked){message(&#x27;form-message&#x27;,&#x27;กรุณายืนยันข้อมูลก่อนส่งรายงาน&#x27;);return;}go(&#x27;sent&#x27;);}
+if(a===&#x27;save&#x27;){b.innerHTML=icon(&#x27;bookmark-check&#x27;)+&#x27; บันทึกแล้ว&#x27;;if(globalThis.lucide)lucide.createIcons();}
+if(a===&#x27;flag&#x27;)message(&#x27;story-message&#x27;,&#x27;ต้นแบบ: รับแจ้งเนื้อหาไว้ให้ทีมงานตรวจสอบแล้ว&#x27;);
+if(a===&#x27;comment&#x27;){message(&#x27;comment-message&#x27;,draft.comment?&#x27;บันทึกความคิดเห็นตัวอย่างแล้ว ไม่มีการเผยแพร่จริง&#x27;:&#x27;กรุณาเขียนความคิดเห็นก่อนส่ง&#x27;);}
+if(a===&#x27;publish&#x27;){message(&#x27;form-message&#x27;,draft.title&amp;&amp;draft.post?&#x27;บันทึกโพสต์ตัวอย่างแล้ว ระบบจริงจะตรวจข้อมูลระบุตัวบุคคลก่อนเผยแพร่&#x27;:&#x27;กรอกหัวข้อและเนื้อหาก่อนเผยแพร่&#x27;);}
+if(a===&#x27;dispute-file&#x27;){b.textContent=&#x27;แนบเอกสารตัวอย่างแล้ว&#x27;;}
+if(a===&#x27;dispute&#x27;){message(&#x27;form-message&#x27;,draft.ref&amp;&amp;draft.reason?&#x27;ได้รับคำร้องตัวอย่างแล้ว · KO-R-001&#x27;:&#x27;ระบุข้อมูลที่เกี่ยวข้องและเหตุผลก่อนส่ง&#x27;);}
+});
+go(window.openai?.widgetState?.privateContent?.screen||&#x27;appicon&#x27;,false);
+window.addEventListener(&#x27;openai:set_globals&#x27;,e=&gt;{const s=e.detail?.globals?.widgetState?.privateContent?.screen;if(s&amp;&amp;s!==page)go(s,false)});
+const design={accent:&#x27;#5146dc&#x27;,radius:34};function style(){root.style.setProperty(&#x27;--ko-brand&#x27;,design.accent);root.querySelector(&#x27;.ko-phone&#x27;).style.borderRadius=design.radius+&#x27;px&#x27;;}
+if(globalThis.Tweak){const tweak=new Tweak({container:root,onChange:style});tweak.addColorPicker(design,&#x27;accent&#x27;,{label:&#x27;สีหลักของแอป&#x27;});tweak.addSlider(design,&#x27;radius&#x27;,{label:&#x27;ความโค้งกรอบมือถือ&#x27;,min:16,max:40,unit:&#x27;px&#x27;});}
+})();
+&lt;/script&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+  let lastPointerWasTouch = false;
+  let pinnedByTouch = false;
+
+  const getTrigger = (event) =&gt; {
+    for (const target of event.composedPath()) {
+      if (target?.nodeType === Node.ELEMENT_NODE) {
+        const trigger = target.closest(&quot;[data-tooltip]&quot;);
+        if (trigger) return trigger;
+      }
+    }
+    return null;
+  };
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    pinnedByTouch = false;
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handlePointer = (event) =&gt; {
+    lastPointerWasTouch =
+      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+  };
+  const handleTouchClick = (event) =&gt; {
+    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+    lastPointerWasTouch = false;
+    if (!isTouch || event.detail === 0) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (
+      trigger == null ||
+      !trigger.isConnected ||
+      getContent(trigger).length === 0 ||
+      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+    ) {
+      if (pinnedByTouch) {
+        closeTooltip();
+      }
+      return;
+    }
+    openTooltip(trigger);
+    pinnedByTouch = activeTrigger === trigger;
+    window.setTimeout(() =&gt; {
+      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+        closeTooltip(false);
+      }
+    }, 0);
+  };
+  const handleLeave = (event) =&gt; {
+    if (pinnedByTouch) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    lastPointerWasTouch = false;
+    const trigger = getTrigger(event);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handlers = {
+    pointerover: handlePointerOpen,
+    pointerdown: handlePointer,
+    pointercancel: handlePointer,
+    click: handleTouchClick,
+    pointerout: handleLeave,
+    focusin: handleFocusIn,
+    focusout: handleLeave,
+    keydown: handleKeyDown,
+    contextmenu: handleContextMenu,
+  };
+  const roots = new Map();
+  const handledEvents = new WeakSet();
+  const handleEvent = (event) =&gt; {
+    if (handledEvents.has(event)) return;
+    handledEvents.add(event);
+    handlers[event.type](event);
+  };
+  const discoverRoots = (node) =&gt; {
+    if (node.shadowRoot) listen(node.shadowRoot);
+    for (const element of node.querySelectorAll(&quot;*&quot;)) {
+      if (element.shadowRoot) listen(element.shadowRoot);
+    }
+  };
+  const listen = (root) =&gt; {
+    if (roots.has(root)) return;
+    for (const type of Object.keys(handlers)) root.addEventListener(type, handleEvent);
+    const observer = new window.MutationObserver((records) =&gt; {
+      for (const { addedNodes } of records) {
+        for (const node of addedNodes) {
+          if (node.nodeType === Node.ELEMENT_NODE) discoverRoots(node);
+        }
+      }
+      for (const [root, cleanup] of roots) {
+        if (root.host &amp;&amp; !root.host.isConnected) {
+          cleanup();
+          roots.delete(root);
+        }
+      }
+      if (activeTrigger &amp;&amp; !activeTrigger.isConnected) closeTooltip(false);
+    });
+    observer.observe(root, { childList: true, subtree: true });
+    roots.set(root, () =&gt; {
+      observer.disconnect();
+      for (const type of Object.keys(handlers)) root.removeEventListener(type, handleEvent);
+    });
+    discoverRoots(root);
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    lastPointerWasTouch = false;
+    for (const cleanup of roots.values()) cleanup();
+    roots.clear();
+    tooltip = null;
+  };
+
+  // Events between children of one shadow root never reach the document.
+  listen(document);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-tabs&quot;&gt;
+(() =&gt; {
+  const selector = &#x27;.nav[role=&quot;tablist&quot;] [role=&quot;tab&quot;]&#x27;;
+  const disabled = &#x27;:disabled,[aria-disabled=&quot;true&quot;]&#x27;;
+  const selectTab = (selected) =&gt; {
+    const panelId = selected.getAttribute(&quot;aria-controls&quot;);
+    for (const tab of selected.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)) {
+      const active = tab === selected;
+      tab.classList.toggle(&quot;active&quot;, active);
+      tab.setAttribute(&quot;aria-selected&quot;, String(active));
+      const id = tab.getAttribute(&quot;aria-controls&quot;);
+      const panel = id &amp;&amp; document.getElementById(id);
+      if (panel != null) {
+        panel.hidden = id !== panelId;
+        if (!panel.hidden &amp;&amp; selected.id) {
+          panel.setAttribute(&quot;aria-labelledby&quot;, selected.id);
+        }
+      }
+    }
+  };
+  const interact = (event) =&gt; {
+    const tab = event.target?.closest?.(selector);
+    if (event.defaultPrevented || tab == null || tab.matches(disabled)) {
+      return;
+    }
+    if (event.type === &quot;click&quot;) {
+      selectTab(tab);
+      return;
+    }
+    const tabs = Array.from(
+      tab.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;),
+    ).filter((candidate) =&gt; !candidate.matches(disabled));
+    const current = tabs.indexOf(tab);
+    let next;
+    if (event.key === &quot;ArrowRight&quot; || event.key === &quot;ArrowDown&quot;) {
+      next = (current + 1) % tabs.length;
+    } else if (event.key === &quot;ArrowLeft&quot; || event.key === &quot;ArrowUp&quot;) {
+      next = (current + tabs.length - 1) % tabs.length;
+    } else if (event.key === &quot;Home&quot;) {
+      next = 0;
+    } else if (event.key === &quot;End&quot;) {
+      next = tabs.length - 1;
+    } else {
+      return;
+    }
+    event.preventDefault();
+    tabs[next].focus();
+    selectTab(tabs[next]);
+  };
+
+  for (const list of document.querySelectorAll(&#x27;.nav[role=&quot;tablist&quot;]&#x27;)) {
+    const selected =
+      list.querySelector(&#x27;[role=&quot;tab&quot;][aria-selected=&quot;true&quot;]&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;].active&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;]&#x27;);
+    if (selected != null) {
+      selectTab(selected);
+    }
+  }
+  document.addEventListener(&quot;click&quot;, interact);
+  document.addEventListener(&quot;keydown&quot;, interact);
+  window.addEventListener(&quot;pagehide&quot;, () =&gt; {
+    document.removeEventListener(&quot;click&quot;, interact);
+    document.removeEventListener(&quot;keydown&quot;, interact);
+  }, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+<script>(() => {
+  const frame = document.getElementById("codex-visualization");
+  if (!(frame instanceof HTMLIFrameElement)) {
+    return;
+  }
+  let viewportHeight = globalThis.innerHeight;
+  const storageKey = `codex:visualization-widget-state-v2:${JSON.stringify([
+    globalThis.location.pathname,
+    globalThis.location.search,
+  ])}`;
+  const parseState = (serializedState) => {
+    if (
+      typeof serializedState !== "string" ||
+      new TextEncoder().encode(serializedState).length > 16 * 1024
+    ) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    /** @type {unknown} */
+    const state = JSON.parse(serializedState);
+    if (
+      state == null ||
+      typeof state !== "object" ||
+      Array.isArray(state) ||
+      ("imageIds" in state &&
+        (!Array.isArray(state.imageIds) || state.imageIds.length > 0))
+    ) {
+      throw new TypeError("Widget state must be a JSON object");
+    }
+    const storedState = { modelContent: null, privateContent: null, ...state };
+    const canonicalState = JSON.stringify(
+      storedState,
+      (_key, /** @type {unknown} */ value) => {
+        if (typeof value === "number" && !Number.isFinite(value)) {
+          throw new TypeError("Widget state must contain finite numbers");
+        }
+        return value;
+      },
+    );
+    if (new TextEncoder().encode(canonicalState).length > 16 * 1024) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    return storedState;
+  };
+  let storage = null;
+  let state = null;
+  try {
+    const localStorage = globalThis.localStorage;
+    const probeKey = `${storageKey}:probe`;
+    localStorage.setItem(probeKey, "1");
+    localStorage.removeItem(probeKey);
+    storage = localStorage;
+    const savedState = storage.getItem(storageKey);
+    if (savedState != null) {
+      try {
+        state = parseState(savedState);
+      } catch {
+        // Invalid saved state does not disable future writes.
+      }
+    }
+  } catch {
+    storage = null;
+  }
+  const initialGlobals = {
+    widgetState: state,
+    statePersistence: storage == null ? "none" : "local",
+  };
+
+  const channel = new MessageChannel();
+  channel.port1.addEventListener("message", (event) => {
+    const data = event.data;
+    if (typeof data !== "object" || data == null) {
+      return;
+    }
+    if (data.type === "widget-state-write") {
+      if (!Number.isSafeInteger(data.id) || data.id <= 0) {
+        return;
+      }
+      let ok = false;
+      try {
+        if (storage != null) {
+          const state = parseState(data.state);
+          storage.setItem(storageKey, JSON.stringify(state));
+          ok = true;
+        }
+      } catch {
+        // Storage denial, quota limits, and invalid state return a failed receipt.
+      }
+      channel.port1.postMessage({
+        type: "widget-state-result",
+        id: data.id,
+        ok,
+      });
+      return;
+    }
+    if (data.type === "height") {
+      const height = data.height;
+      if (
+        typeof height === "number" &&
+        Number.isFinite(height) &&
+        height >= 0 &&
+        height <= 10_000
+      ) {
+        frame.style.height = Math.ceil(height) + "px";
+      }
+      return;
+    }
+    if (data.type === "scroll-to") {
+      const top = data.top;
+      if (
+        typeof top === "number" &&
+        Number.isFinite(top) &&
+        top >= 0 &&
+        globalThis.navigator.userActivation?.isActive === true
+      ) {
+        globalThis.scrollTo({
+          top: Math.ceil(
+            globalThis.scrollY + frame.getBoundingClientRect().top + top,
+          ),
+        });
+      }
+      return;
+    }
+    if (data.type === "open-external") {
+      const rawHref = data.href;
+      if (typeof rawHref !== "string") {
+        return;
+      }
+      let href;
+      try {
+        const url = new URL(rawHref, document.baseURI);
+        if (url.protocol !== "https:") {
+          return;
+        }
+        href = url.href;
+      } catch {
+        return;
+      }
+      if (globalThis.navigator.userActivation?.isActive === true) {
+        const anchor = document.createElement("a");
+        anchor.href = href;
+        anchor.rel = "noopener noreferrer";
+        anchor.target = "_blank";
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+      }
+      return;
+    }
+    if (data.type === "follow-up") {
+      const prompt = data.prompt;
+      if (
+        typeof prompt !== "string" ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      const title = data.title;
+      globalThis.prompt(typeof title === "string" ? title : prompt, prompt);
+    }
+  });
+  channel.port1.start();
+  const srcdoc = frame.dataset.srcdoc;
+  if (srcdoc == null) {
+    return;
+  }
+  globalThis.addEventListener("resize", () => {
+    const height = Number.parseFloat(frame.style.height);
+    if (!Number.isFinite(height) || height <= viewportHeight) {
+      frame.style.removeProperty("height");
+    }
+    viewportHeight = globalThis.innerHeight;
+    channel.port1.postMessage({ type: "measure" });
+  });
+  frame.addEventListener(
+    "load",
+    () => {
+      frame.contentWindow?.postMessage(
+        { type: "codex-visualization-initialize" },
+        "*",
+        [channel.port2],
+      );
+    },
+    { once: true },
+  );
+  // Match the trusted bootstrap element, not the same text in an authored title.
+  frame.srcdoc = srcdoc.replace(
+    '<script type="application/json" id="codex-visualization-widget-state">__CODEX_VISUALIZATION_WIDGET_STATE__<\/script>',
+    () =>
+      '<script type="application/json" id="codex-visualization-widget-state">' +
+      JSON.stringify(initialGlobals).replaceAll("<", "\\u003c") +
+      "<\/script>",
+  );
+  delete frame.dataset.srcdoc;
+})();
+</script>
+</body>
+</html>
