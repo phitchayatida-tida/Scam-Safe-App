@@ -1,1 +1,0 @@
-# Scam-Safe-App
